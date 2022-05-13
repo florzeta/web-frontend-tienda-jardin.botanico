@@ -1,0 +1,24 @@
+@import '../scss/base/root';
+@import '../scss/base/footer';
+@import '../scss/components/header';
+@import '../scss/components/listas';
+@import '../scss/components/mediaQuery';
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005));
+    background-position: right top;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 4px 0px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+}
+
+
