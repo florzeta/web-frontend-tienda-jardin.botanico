@@ -96,4 +96,11 @@ body {
   grid-template-areas: "header header" "main main" "footer footer";
 }
 
+.header-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-area: header;
+}
+
 /*# sourceMappingURL=style.css.map */

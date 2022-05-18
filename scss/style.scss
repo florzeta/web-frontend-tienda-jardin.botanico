@@ -21,4 +21,9 @@ body {
         "footer footer"
 }
 
-
+.header-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: header;
+}
