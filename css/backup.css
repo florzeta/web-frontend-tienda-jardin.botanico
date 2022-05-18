@@ -26,7 +26,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-    gap: 4px 0px;
     grid-template-areas:
         "header header"
         "main main"
@@ -39,6 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* background-color: #11324d9c; */
     grid-area: header;
 }
 
@@ -59,35 +59,19 @@ body {
 }
 
 
-.header-hero nav {
-    margin: 0.4em 0.1em 0.4em 0.1em;
-    padding: 0.4em;
-    width: 100%;
-    background-color: rgba(86, 162, 200, 0.293);
-    border-radius: 2em;
-}
-
-.header-hero nav ul {
-    margin: 1em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .header-hero nav ul li a {
     text-decoration: none;
     color: #ffffffde;
-    font-size: 3.8em;
+    font-size: 2.5em;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
-    text-shadow: -3px 2px 2px rgba(115, 157, 186, 0.655);
+    text-shadow: -3px 3px 2px rgba(115, 157, 186, 0.655);
 
 }
 
 .header-hero nav ul li a:hover {
     color: #b758eec7;
-    font-size: 4em;
+    font-size: 2.7em;
     text-shadow: -3px 2px 3px white;
     transition: 1s;
 }
@@ -122,7 +106,7 @@ body {
 }
 
 .hero-section p {
-    font-size: 3.5em;
+    font-size: 3.3em;
     font-family: 'Libre Baskerville', serif;
     color: #2d99ba;
     text-shadow: -3px 3px 3px rgba(211, 203, 190, 0.908);
@@ -140,13 +124,23 @@ body {
     grid-area: main;
     background-color: rgba(99, 128, 146, 0.12);
     margin: 3em 0;
+    flex-wrap: wrap;
 }
 
-.seccion-mapa img {
-    width: 40em;
-    margin: 3em;
+.seccion-mapa iframe {
+    margin: 2em;
 }
 
+.seccion-mapa div div {
+    width: 70em;
+}
+
+.seccion-mapa div h1 {
+    color: rgba(0, 0, 0, 0.754);
+    font-size: 1.7em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
 
 
 /* SECCION DE SUBSCRIPCION DENTRO DE MAIN POSICIONADO SOBRE FOOTER */
@@ -158,21 +152,19 @@ body {
 .main-form div {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgba(115, 166, 191, 0.743);
 }
 
 .main-form h2,
 p {
     color: rgba(0, 0, 0, 0.754);
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
-
-
 
 
 /**----COMIENZA FOOTER----**/
@@ -239,18 +231,8 @@ h5 {
 /**-----HEADER-NO-INDEX-------**/
 .header {
     grid-area: header;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: #54738c2a;
     flex-wrap: wrap;
-}
-
-
-.header .logo a img {
-    margin: 1em 0.5em;
-    width: 15em;
-    height: 15em;
 }
 
 .logo a h1 {
@@ -258,16 +240,6 @@ h5 {
     text-decoration: none;
 }
 
-.header nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f7e9d7bf;
-    border-radius: 2em;
-    margin-right: 2em;
-    flex-wrap: wrap;
-}
 
 .header nav ul li {
     margin: 2em;
@@ -279,7 +251,7 @@ h5 {
     font-size: 3em;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
-    text-shadow: 3px 3px 3px white;
+    text-shadow: -2px -2px 3px white;
 
 }
 
@@ -292,17 +264,19 @@ h5 {
 
 /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
 .main .titulo-seccion {
-    display: flex;
+    /* display: flex; */
     text-align: center;
+    align-items: center;
 }
 
-.titulo-seccion h2 {
-    margin: 1em;
-    color: #3b939dd4;
-    font-size: 4.5em;
+.titulo-seccion h1 {
+    font-weight: bold;
+    background-color: #3b939dd4;
+    color: #ffffffd4;
+    font-size: 4.3em;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    text-shadow: -2px 2px 3px #f7e9d7bf;
+    text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
 
 }
 
@@ -316,19 +290,23 @@ h5 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+
 }
 
-.main-contacto {
+.main-contacto div {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around; 
+    flex-wrap: wrap;
     align-items: center;
-    flex-wrap: wrap;
-    border: solid #f7e9d7b6;
-    flex-wrap: wrap;
 }
 
 .form-contacto div {
-    width: 80%;
+    width: 90%;
     margin: 2em;
     display: flex;
     flex-direction: column;
@@ -339,14 +317,9 @@ h5 {
 .form-contacto div div {
     flex-direction: row;
     text-align: center;
+    align-items: center;
 }
 
-
-.form-contacto #form {
-    width: 90%;
-    border: solid #f7e9d772;
-    border-radius: 2, 5em;
-}
 
 .form-contacto input:focus {
     width: 1em;
@@ -362,11 +335,11 @@ h5 {
     text-shadow: -2px 1px 3px #08332abc;
 }
 
-.form-contacto h3 {
+.form-contacto h2 {
     margin-bottom: 5px;
     text-align: center;
     color: #f7e9d7cb;
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: bolt;
     font-family: "Nunito", sans-serif;
     text-shadow: -2px 2px 2px #94d5f3bc;
@@ -379,10 +352,11 @@ h5 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-decoration: none;
 
 }
 
-.main-contacto section .datos-contacto a {
+.main-contacto .datos-contacto h3 {
     text-decoration: none;
     font-size: 2em;
     font-weight: bold;
@@ -391,6 +365,14 @@ h5 {
     text-shadow: -1px 2px 2px #154146b0;
 }
 
+.main-contacto .datos-contacto a {
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(243, 230, 206);
+
+}
 
 
 /**---COMIENZA pages EL-JARDIN----**/
@@ -404,7 +386,6 @@ h5 {
 
 /**---comienza atajos-el-jardin---**/
 .atajos-el-jardin {
-    height: 60em;
     margin: 1em;
     display: flex;
     flex-wrap: wrap;
@@ -467,7 +448,6 @@ h5 {
 
 .productos div {
     height: 30em;
-    padding: 1em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -484,7 +464,7 @@ h5 {
 
 .productos div img:hover {
     transform: scale(1.1);
-    border-color: #1d5c63e9;
+    border-color: #1d5c639e;
 
 }
 
@@ -653,7 +633,6 @@ h5 {
 
 .main-tienda {
     width: 100%;
-    border: solid rgb(243, 230, 206);
 }
 
 /* COMIENZA SECCION "NUESTROS DESTACADOS"(tienda.html) */
@@ -677,8 +656,8 @@ h5 {
 
 }
 
-.nuestros-destacados h3 {
-    color: rgb(243, 230, 206);
+.nuestros-destacados h2 {
+    color: rgba(247, 233, 215, 0.919);
     font-size: 4.5em;
     font-weight: bolt;
     font-family: 'Nunito', sans-serif;
@@ -689,10 +668,10 @@ h5 {
 
 
 .nuestros-destacados p {
-    color: white;
+    color: #eaedef;
     font-size: 3.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: -2px 2px 2px #154146b0
+    text-shadow: -2px 2px 2px #113539;
 }
 
 .nuestros-destacados div:nth-child(2) {
@@ -715,11 +694,11 @@ h5 {
 
 /* COMIENZA SECCION NOVEDADES (tienda.html) */
 .novedades {
-    margin-bottom: 0;
     margin: 2em;
     padding: 1em;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 
@@ -741,16 +720,17 @@ h5 {
 
 .novedades div img:hover {
     transform: scale(1.1);
+
 }
 
-.novedades h4 {
+.novedades h3 {
     margin: 1em;
     color: #eaedef;
     font-size: 4em;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: -3px 3px 3px #b758eec7;
+    text-shadow: -3px 3px 3px #b758ee;
 }
 
 /* -------ANIMACIONES-------- */
@@ -773,16 +753,16 @@ h5 {
 
     /* ---INDEX ----*/
     .header-hero p {
-        font-size: 3.2em;
+        font-size: 3em;
     }
 
     .header-hero nav ul li a {
-        font-size: 3.4em;
+        font-size: 2.2em;
 
     }
 
     .header-hero nav ul li a:hover {
-        font-size: 3.6em;
+        font-size: 2.5em;
     }
 
     /* ----TIENDA----- */
@@ -858,24 +838,37 @@ h5 {
 
 }
 
+
 /* Media Queryes para Desktop - 992px */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 990px) {
+
+    /* MAIN */
+    .main-form h2,
+    p {
+        font-size: 1.7em;
+    }
+
+    .footer .logo img {
+        margin: 1, 5em 6em;
+        width: 15em;
+    }
 
     /* ---TITULO SECCION--- */
     .titulo-seccion h2 {
         margin: 1em;
-        font-size: 3.5em;
+        font-size: 3em;
+
     }
 
     /* MENU NAVEGABLE NO INDEX */
     .header nav ul li a {
-        font-size: 2em;
+        font-size: 1.7em;
 
     }
 
     .header nav ul li a:hover {
         color: #b758ee;
-        font-size: 2.1em;
+        font-size: 2em;
     }
 
     .header .logo a img {
@@ -883,6 +876,22 @@ h5 {
         width: 12em;
         height: 12em;
     }
+
+    /* index */
+    .seccion-mapa div div {
+        width: 50em;
+    }
+
+    .seccion-mapa div h1 {
+        font-size: 1.3em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    .hero-section p {
+        font-size: 2em;
+    }
+
 
     /* ----TIENDA----- */
 
@@ -934,12 +943,11 @@ h5 {
 
     /* ---TITULO SECCION--- */
     .titulo-seccion h2 {
-        margin: 1em;
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     /* MENU NAVEGABLE NO INDEX */
-    
+
     .header nav ul li a {
         font-size: 1.8em;
 
@@ -983,7 +991,7 @@ h5 {
     }
 
     .header-hero nav ul li a:hover {
-        font-size: 3.2em;
+        font-size: 2em;
     }
 
     /* EL JARDIN */
