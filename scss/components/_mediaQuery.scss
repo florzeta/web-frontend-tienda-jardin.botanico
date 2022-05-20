@@ -1,0 +1,321 @@
+/* --------MEDIA QUERIES-------- */
+
+/* media queries para desktop grande- 1200px */
+@media screen and (max-width: 1200px) {
+
+    /* ---INDEX ----*/
+    .header-hero p {
+        font-size: 3em;
+    }
+
+    .header-hero nav ul li a {
+        font-size: 2.2em;
+
+    }
+
+    .header-hero nav ul li a:hover {
+        font-size: 2.5em;
+    }
+
+    /* ----TIENDA----- */
+
+    .nuestros-destacados>div {
+        margin: 10px;
+        width: 25em;
+        height: 38em;
+    }
+
+    .nuestros-destacados h2 {
+
+        font-size: 2.4em;
+    }
+
+    .nuestros-destacados p {
+        font-size: 2em;
+    }
+
+    .novedades div img {
+        width: 20em;
+        height: 26em;
+    }
+
+    .novedades h4 {
+        font-size: 2.8em;
+    }
+
+    /*---- TALLERES--- */
+    .videos-talleres p {
+        width: 70%;
+        height: 25%;
+    }
+
+    .talleres-presenciales th {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.6em;
+    }
+
+    .talleres-presenciales td {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.4em;
+    }
+
+    .talleres-presenciales table {
+        margin: 4em 0 4em 0;
+        border-color: lightseagreen;
+        border-style: solid;
+        border-collapse: collapse;
+        empty-cells: show;
+        table-layout: fixed;
+        width: 80%;
+    }
+
+    /* ----FOOTER---- */
+    .footer .logo img {
+        width: 13em;
+    }
+
+    .footer .logo h3 {
+        font-size: 1.8em;
+    }
+
+    /* EL JARDIN */
+    .productos div img {
+        width: 20em;
+        height: 25em;
+    }
+
+    .productos a {
+        font-size: 2em;
+    }
+
+}
+
+
+/* Media Queryes para Desktop - 992px */
+@media screen and (max-width: 990px) {
+
+    /* MAIN */
+    .main-form h2,
+    p {
+        font-size: 1.7em;
+    }
+
+    .footer .logo img {
+        margin: 1, 5em 6em;
+        width: 15em;
+    }
+
+    /* ---TITULO SECCION--- */
+    .titulo-seccion h2 {
+        margin: 1em;
+        font-size: 3em;
+
+    }
+
+    /* MENU NAVEGABLE NO INDEX */
+    .header nav ul li a {
+        font-size: 1.7em;
+
+    }
+
+    .header nav ul li a:hover {
+        color: #b758ee;
+        font-size: 2em;
+    }
+
+    .header .logo a img {
+        margin: 2em 0.5em;
+        width: 12em;
+        height: 12em;
+    }
+
+    /* index */
+    .seccion-mapa div div {
+        width: 50em;
+    }
+
+    .seccion-mapa div h1 {
+        font-size: 1.3em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    .hero-section p {
+        font-size: 2em;
+    }
+
+
+    /* ----TIENDA----- */
+
+    .nuestros-destacados>div {
+        width: 18em;
+        height: 30em;
+    }
+
+    .nuestros-destacados h2 {
+        font-size: 2em;
+    }
+
+    .nuestros-destacados p {
+        font-size: 1.5em;
+    }
+
+    .novedades div img {
+        width: 18em;
+        height: 24em;
+    }
+
+    .novedades h4 {
+        font-size: 2.5em;
+    }
+
+    /* ---CONTACTO---- */
+
+    .form-contacto #form {
+        width: 40em;
+    }
+
+    .main-contacto section .datos-contacto a {
+        text-decoration: none;
+        font-size: 1.6em;
+    }
+
+    /* EL JARDIN */
+    .productos div img {
+        width: 16em;
+    }
+
+    .productos a {
+        font-size: 1.8em;
+    }
+}
+
+/* Media queryes intermedio-(tablets) 768px */
+@media screen and (max-width: 768px) {
+
+    /* ---TITULO SECCION--- */
+    .titulo-seccion h2 {
+        font-size: 2.5em;
+    }
+
+    /* MENU NAVEGABLE NO INDEX */
+
+    .header nav ul li a {
+        font-size: 1.8em;
+
+    }
+
+    .header nav ul li a:hover {
+        color: #b758ee;
+        font-size: 2em;
+    }
+
+    .header .logo a img {
+        margin: 2em 0.5em;
+        width: 10em;
+        height: 10em;
+    }
+
+    /* main-contacto */
+
+    .form-contacto input:focus {
+        width: 18em;
+        font-size: 2em;
+    }
+
+    .form-contacto p {
+        font-size: 1.8em;
+    }
+
+    .form-contacto h3 {
+
+        font-size: 1.em;
+    }
+
+    /* ---INDEX ----*/
+    .header-hero p {
+        font-size: 2.8em;
+    }
+
+    .header-hero nav ul li a {
+        font-size: 1.8em;
+
+    }
+
+    .header-hero nav ul li a:hover {
+        font-size: 2em;
+    }
+
+    /* EL JARDIN */
+    .atajos-el-jardin div {
+        width: 18em;
+        height: 20em;
+
+    }
+
+    .atajos-el-jardin div a img {
+        margin: 1em;
+        width: 9em;
+        height: 9em;
+    }
+
+    /* ---TALLERES--- */
+    .talleres div {
+        width: 30em;
+        height: 30em;
+    }
+
+
+    .talleres div a h2 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .videos-talleres p {
+        width: 70%;
+        height: 25%;
+    }
+}
+
+/* Media Queryes para telefonos */
+@media screen and (max-width: 576px) {
+
+    /* EL JARDIN */
+    .productos div img {
+        width: 12em;
+    }
+
+    .productos a {
+        font-size: 1.4em;
+    }
+
+    /* MENU NAVEGABLE NO INDEX */
+
+    .header nav ul li a {
+        font-size: 1.5em;
+
+    }
+
+    .header nav ul li a:hover {
+        color: #b758ee;
+        font-size: 1.8em;
+    }
+
+    .header .logo a img {
+        margin: 2em 0.5em;
+        width: 9em;
+        height: 9em;
+    }
+
+    /* ----TIENDA----- */
+
+    .nuestros-destacados>div {
+        width: 15em;
+        height: 28em;
+    }
+
+    .nuestros-destacados h2 {
+        font-size: 1.8em;
+    }
+
+}
