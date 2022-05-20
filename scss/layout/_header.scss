@@ -5,7 +5,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #5e809c47;
+    background-color: nth($list: $colors, $n: 26);
     flex-wrap: wrap;
 
     nav ul {
@@ -13,7 +13,7 @@ header {
         list-style: none;
         justify-content: space-around;
         align-items: center;
-        background-color: #f7e9d7bf;
+        background-color: nth($list: $colors, $n: 13);
         border-radius: 2em;
         margin-right: 2em;
         flex-wrap: wrap;
@@ -23,15 +23,15 @@ header {
 
             a {
                 text-decoration: none;
-                color: #7698b5;
-                font-size: 2.5em;
+                color: nth($list: $colors, $n: 14) ;
+                font-size: nth($list: $font-size, $n:5 );
                 font-weight: bold;
-                font-family: 'Nunito', sans-serif;
+                font-family: nth($list: $font-family, $n: 3);
                 text-shadow: 3px 3px 3px white;
 
                 &:hover {
-                    color: #b758ee;
-                    font-size: 2.8em;
+                    color: nth($list: $colors, $n: 4);
+                    font-size: nth($list: $font-size, $n:2.8 );
                     text-shadow: 3px 3px 3px white;
                     transition: 1s;
                 }
@@ -53,7 +53,7 @@ header-hero {
         margin: 0.4em 0.1em 0.4em 0.1em;
         padding: 0.4em;
         width: 100%;
-        background-color: rgba(86, 162, 200, 0.293);
+        background-color: nth($list: $colors, $n: 1);
         border-radius: 2em;
 
         ul {
@@ -65,15 +65,15 @@ header-hero {
 
             li a {
                 text-decoration: none;
-                color: #ffffffde;
-                font-size: 3.8em;
+                color: nth($list: $colors, $n: 2);
+                font-size: nth($list: $font-size, $n:10 );
                 font-weight: bold;
-                font-family: 'Nunito', sans-serif;
+                font-family: nth($list: $font-family, $n: 3);
                 text-shadow: -3px 2px 2px rgba(115, 157, 186, 0.655);
 
                 &:hover {
-                    color: #b758eec7;
-                    font-size: 4em;
+                    color: nth($list: $colors, $n: 4);
+                    font-size: nth($list: $font-size, $n:3.8 );
                     text-shadow: -3px 2px 3px white;
                     transition: 1s;
                 }

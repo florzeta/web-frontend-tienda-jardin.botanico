@@ -25,9 +25,9 @@ main {
         align-items: center;
 
         h1 {
-            font-size: 3.3em;
-            font-family: 'Libre Baskerville', serif;
-            color: #2d99ba;
+            font-size: nth($list: $font-size, $n:8 );
+            font-family: nth($list: $font-family, $n:1 );
+            color: nth($list: $colors, $n:6);
             text-shadow: -3px 3px 3px rgba(211, 203, 190, 0.908);
             text-align: center;
             animation-name: entradaTextoPrincipal;
@@ -44,7 +44,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     grid-area: main;
-    background-color: rgba(99, 128, 146, 0.12);
+    background-color: nth($list: $colors, $n: 17);
     margin: 3em 0;
     flex-wrap: wrap;
 
@@ -55,9 +55,9 @@ main {
             width: 70em;
 
             div p {
-                color: rgba(0, 0, 0, 0.754);
-                font-size: 1.6em;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: nth($list: $colors, $n: 10);
+                font-size: nth($list: $font-size, $n: 2);
+                font-family: nth($list: $font-family, $n: 2);
                 text-align: center;
             }
         }
@@ -69,14 +69,14 @@ main {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(115, 166, 191, 0.743);
+    background-color: nth($list: $colors, $n: 9);
 
     h2,
     p {
-        color: rgba(0, 0, 0, 0.754);
-        font-size: 1.6em;
+        color: nth($list: $colors, $n: 10);
+        font-size: nth($list: $font-size, $n: 2);
         font-weight: bold;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: nth($list: $font-family, $n: 2);
         text-align: center;
     }
 }
@@ -99,10 +99,10 @@ main {
 
         h1 {
             font-weight: bold;
-            background-color: #3b939dd4;
-            color: #ffffffd4;
-            font-size: 4.3em;
-            font-family: 'Nunito', sans-serif;
+            background-color: nth($list: $colors, $n:15 );
+            color: nth($list: $colors, $n: 2);
+            font-size: nth($list: $font-size, $n: 11);
+            font-family: nth($list: $font-family, $n: 3);
             text-align: center;
             text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
 
@@ -130,10 +130,10 @@ main {
                 text-decoration: none;
 
                 p {
-                    font-size: 20px;
+                    font-size: nth($list: $font-size, $n: 4);
                     font-weight: bold;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    color: rgba(0, 0, 0, 0.826);
+                    font-family: nth($list: $font-family, $n: 4);
+                    color: nth($list: $colors, $n: 10);
                     text-shadow: 3px 2px 3px #e39b308a;
 
                 }

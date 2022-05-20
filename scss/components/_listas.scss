@@ -1,5 +1,5 @@
-/* lista */
-$colores:
+/* lista de los colores de mi proyecyo */
+$colors:
 rgba(86, 162, 200, 0.293),
 #ffffffde,
 rgba(115, 157, 186, 0.655),
@@ -24,5 +24,28 @@ rgb(243, 230, 206),
 #e7a64692,
 #56748c,
 #3e8c8faf,
-lightseagreen;
+lightseagreen,
+#5e809c47;
 
+/*lista de los font-size de mi proyecto*/
+$font-size:
+1.4em,
+1.6em,
+1.8em,
+2em,
+2.5em,
+2.8em,
+3em,
+3.2em,
+3.4em,
+3.6em,
+3.8em;
+
+/*lista de los font-family de mi proyecto*/
+$font-family:
+'Libre Baskerville', serif,
+'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,
+'Nunito', sans-serif,
+'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,
+'Work Sans', sans-serif,
+'monospace';
