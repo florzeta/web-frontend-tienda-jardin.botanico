@@ -227,9 +227,9 @@
         font-size: 1.8em;
     }
 
-    .form-contacto h3 {
+    .form-contacto h2 {
 
-        font-size: 1.em;
+        font-size: nth($list: $font-size, $n: 2);
     }
 
     /* ---INDEX ----*/
