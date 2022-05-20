@@ -24,14 +24,14 @@ header {
             a {
                 text-decoration: none;
                 color: nth($list: $colors, $n: 14) ;
-                font-size: nth($list: $font-size, $n:5 );
+                font-size: nth($list: $font-size, $n: 5 );
                 font-weight: bold;
                 font-family: nth($list: $font-family, $n: 3);
                 text-shadow: 3px 3px 3px white;
 
                 &:hover {
                     color: nth($list: $colors, $n: 4);
-                    font-size: nth($list: $font-size, $n:2.8 );
+                    font-size: nth($list: $font-size, $n: 6 );
                     text-shadow: 3px 3px 3px white;
                     transition: 1s;
                 }
@@ -73,7 +73,7 @@ header-hero {
 
                 &:hover {
                     color: nth($list: $colors, $n: 4);
-                    font-size: nth($list: $font-size, $n:3.8 );
+                    font-size: nth($list: $font-size, $n: 4 );
                     text-shadow: -3px 2px 3px white;
                     transition: 1s;
                 }

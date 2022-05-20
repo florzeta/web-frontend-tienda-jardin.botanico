@@ -1,18 +1,933 @@
-/* Error: $n: 2.8 is not an int.
- *    ,
- * 34 |                     font-size: nth($list: $font-size, $n:2.8 );
- *    |                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\layout\_header.scss 34:32  @import
- *   scss\style.scss 9:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: $n: 2.8 is not an int.\a    \2577 \a 34 \2502                      font-size: nth($list: $font-size, $n:2.8 );\d\a    \2502                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\_header.scss 34:32  @import\a   scss\\style.scss 9:9             root stylesheet";
+/**reseteo**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* variables */
+/* -------ANIMACIONES-------- */
+@keyframes entradaTextoPrincipal {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* lista de los colores de mi proyecyo */
+/*lista de los font-size de mi proyecto*/
+/*lista de los font-family de mi proyecto*/
+/* --------MEDIA QUERIES-------- */
+/* media queries para desktop grande- 1200px */
+@media screen and (max-width: 1200px) {
+  /* ---INDEX ----*/
+  .header-hero p {
+    font-size: 3em;
+  }
+
+  .header-hero nav ul li a {
+    font-size: 2.2em;
+  }
+
+  .header-hero nav ul li a:hover {
+    font-size: 2.5em;
+  }
+
+  /* ----TIENDA----- */
+  .nuestros-destacados > div {
+    margin: 10px;
+    width: 25em;
+    height: 38em;
+  }
+
+  .nuestros-destacados h2 {
+    font-size: 2.4em;
+  }
+
+  .nuestros-destacados p {
+    font-size: 2em;
+  }
+
+  .novedades div img {
+    width: 20em;
+    height: 26em;
+  }
+
+  .novedades h4 {
+    font-size: 2.8em;
+  }
+
+  /*---- TALLERES--- */
+  .videos-talleres p {
+    width: 70%;
+    height: 25%;
+  }
+
+  .talleres-presenciales th {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.6em;
+  }
+
+  .talleres-presenciales td {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4em;
+  }
+
+  .talleres-presenciales table {
+    margin: 4em 0 4em 0;
+    border-color: lightseagreen;
+    border-style: solid;
+    border-collapse: collapse;
+    empty-cells: show;
+    table-layout: fixed;
+    width: 80%;
+  }
+
+  /* ----FOOTER---- */
+  .footer .logo img {
+    width: 13em;
+  }
+
+  .footer .logo h3 {
+    font-size: 1.8em;
+  }
+
+  /* EL JARDIN */
+  .productos div img {
+    width: 20em;
+    height: 25em;
+  }
+
+  .productos a {
+    font-size: 2em;
+  }
+}
+/* Media Queryes para Desktop - 992px */
+@media screen and (max-width: 990px) {
+  /* MAIN */
+  .main-form h2,
+p {
+    font-size: 1.7em;
+  }
+
+  .footer .logo img {
+    margin: 1, 5em 6em;
+    width: 15em;
+  }
+
+  /* ---TITULO SECCION--- */
+  .titulo-seccion h2 {
+    margin: 1em;
+    font-size: 3em;
+  }
+
+  /* MENU NAVEGABLE NO INDEX */
+  .header nav ul li a {
+    font-size: 1.7em;
+  }
+
+  .header nav ul li a:hover {
+    color: #b758ee;
+    font-size: 2em;
+  }
+
+  .header .logo a img {
+    margin: 2em 0.5em;
+    width: 12em;
+    height: 12em;
+  }
+
+  /* index */
+  .seccion-mapa div div {
+    width: 50em;
+  }
+
+  .seccion-mapa div h1 {
+    font-size: 1.3em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+  }
+
+  .hero-section p {
+    font-size: 2em;
+  }
+
+  /* ----TIENDA----- */
+  .nuestros-destacados > div {
+    width: 18em;
+    height: 30em;
+  }
+
+  .nuestros-destacados h2 {
+    font-size: 2em;
+  }
+
+  .nuestros-destacados p {
+    font-size: 1.5em;
+  }
+
+  .novedades div img {
+    width: 18em;
+    height: 24em;
+  }
+
+  .novedades h4 {
+    font-size: 2.5em;
+  }
+
+  /* ---CONTACTO---- */
+  .form-contacto #form {
+    width: 40em;
+  }
+
+  .main-contacto section .datos-contacto a {
+    text-decoration: none;
+    font-size: 1.6em;
+  }
+
+  /* EL JARDIN */
+  .productos div img {
+    width: 16em;
+  }
+
+  .productos a {
+    font-size: 1.8em;
+  }
+}
+/* Media queryes intermedio-(tablets) 768px */
+@media screen and (max-width: 768px) {
+  /* ---TITULO SECCION--- */
+  .titulo-seccion h2 {
+    font-size: 2.5em;
+  }
+
+  /* MENU NAVEGABLE NO INDEX */
+  .header nav ul li a {
+    font-size: 1.8em;
+  }
+
+  .header nav ul li a:hover {
+    color: #b758ee;
+    font-size: 2em;
+  }
+
+  .header .logo a img {
+    margin: 2em 0.5em;
+    width: 10em;
+    height: 10em;
+  }
+
+  /* main-contacto */
+  .form-contacto input:focus {
+    width: 18em;
+    font-size: 2em;
+  }
+
+  .form-contacto p {
+    font-size: 1.8em;
+  }
+
+  .form-contacto h2 {
+    font-size: 1.6em;
+  }
+
+  /* ---INDEX ----*/
+  .header-hero p {
+    font-size: 2.8em;
+  }
+
+  .header-hero nav ul li a {
+    font-size: 1.8em;
+  }
+
+  .header-hero nav ul li a:hover {
+    font-size: 2em;
+  }
+
+  /* EL JARDIN */
+  .atajos-el-jardin div {
+    width: 18em;
+    height: 20em;
+  }
+
+  .atajos-el-jardin div a img {
+    margin: 1em;
+    width: 9em;
+    height: 9em;
+  }
+
+  /* ---TALLERES--- */
+  .talleres div {
+    width: 30em;
+    height: 30em;
+  }
+
+  .talleres div a h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .videos-talleres p {
+    width: 70%;
+    height: 25%;
+  }
+}
+/* Media Queryes para telefonos */
+@media screen and (max-width: 576px) {
+  /* EL JARDIN */
+  .productos div img {
+    width: 12em;
+  }
+
+  .productos a {
+    font-size: 1.4em;
+  }
+
+  /* MENU NAVEGABLE NO INDEX */
+  .header nav ul li a {
+    font-size: 1.5em;
+  }
+
+  .header nav ul li a:hover {
+    color: #b758ee;
+    font-size: 1.8em;
+  }
+
+  .header .logo a img {
+    margin: 2em 0.5em;
+    width: 9em;
+    height: 9em;
+  }
+
+  /* ----TIENDA----- */
+  .nuestros-destacados > div {
+    width: 15em;
+    height: 28em;
+  }
+
+  .nuestros-destacados h2 {
+    font-size: 1.8em;
+  }
+}
+/**--COMIENZA CLASS PRODUCTOS (el-jardin)--**/
+.productos {
+  margin: 1em;
+  background: linear-gradient(rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.103));
+}
+.productos h2 {
+  text-align: center;
+  font-size: 2.8em;
+  margin: 2em 0 2em 0;
+  font-family: "Nunito", sans-serif;
+  color: rgba(0, 0, 0, 0.823);
+  text-shadow: 3px 2px 3px rgba(231, 166, 70, 0.5725490196);
+}
+.productos div {
+  height: 23em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.productos div img {
+  width: 15em;
+  height: 20em;
+  border-radius: 1.5em;
+  transition: 1s;
+}
+.productos div img:hover {
+  transform: scale(1.1);
+  border-color: rgba(29, 92, 99, 0.6196078431);
+}
+.productos div a {
+  text-decoration: none;
+  background-color: #56748c;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 2em 0 20px 0;
+}
+
+/**----COMIENZA FOOTER----**/
+.footer {
+  grid-area: footer;
+  background-color: rgba(84, 115, 140, 0.1647058824);
+  bottom: 0;
+}
+.footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer div .logo img {
+  margin: 1, 5em 6em;
+}
+.footer div .logo img h3 {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+  color: rgba(19, 66, 71, 0.9137254902);
+  margin-left: 27%;
+}
+.footer div .redes-sociales a img {
+  width: 3.8em;
+  margin: 1em;
+  transition: 1s;
+}
+.footer div .redes-sociales a img:hover {
+  transform: scale(1.1);
+}
+.footer div .contacto div {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5em;
+}
+.footer div .contacto div img {
+  float: left;
+  width: 2.7em;
+  margin-right: 5%;
+}
+.footer div .contacto div img h4,
+.footer div .contacto div img h5 {
+  font-size: 1.7em;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "main main" "footer footer";
+}
+
+/**-----HEADER-NO-INDEX-------**/
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(94, 128, 156, 0.2784313725);
+  flex-wrap: wrap;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(247, 233, 215, 0.7490196078);
+  border-radius: 2em;
+  margin-right: 2em;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  margin: 2em;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #7698b5;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "Gill Sans";
+  text-shadow: 3px 3px 3px white;
+}
+header nav ul li a:hover {
+  color: rgba(183, 88, 238, 0.7803921569);
+  font-size: 2.8em;
+  text-shadow: 3px 3px 3px white;
+  transition: 1s;
+}
+
+/**--------HEADER/NAV  (index)--------**/
+header-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* background-color: #11324d9c; */
+  grid-area: header;
+}
+header-hero nav {
+  margin: 0.4em 0.1em 0.4em 0.1em;
+  padding: 0.4em;
+  width: 100%;
+  background-color: rgba(86, 162, 200, 0.293);
+  border-radius: 2em;
+}
+header-hero nav ul {
+  margin: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header-hero nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8705882353);
+  font-size: 3.6em;
+  font-weight: bold;
+  font-family: "Gill Sans";
+  text-shadow: -3px 2px 2px rgba(115, 157, 186, 0.655);
+}
+header-hero nav ul li a:hover {
+  color: rgba(183, 88, 238, 0.7803921569);
+  font-size: 2em;
+  text-shadow: -3px 2px 3px white;
+  transition: 1s;
+}
+
+main {
+  grid-area: main;
+}
+
+/**---MAIN-TEXTO PRINCIPAL-index----**/
+.hero-section {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)), url("../multimedia/fondo-floral-azul.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero-section div {
+  margin: 1em;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-section div h1 {
+  font-size: 3.2em;
+  font-family: "Libre Baskerville";
+  color: #2d99ba;
+  text-shadow: -3px 3px 3px rgba(211, 203, 190, 0.908);
+  text-align: center;
+  animation-name: entradaTextoPrincipal;
+  animation-duration: 5s;
+}
+
+.seccion-mapa {
+  display: flex;
+  justify-content: row;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: main;
+  background-color: rgba(247, 233, 215, 0.7960784314);
+  margin: 3em 0;
+  flex-wrap: wrap;
+}
+.seccion-mapa iframe {
+  margin: 2em;
+}
+.seccion-mapa iframe div div {
+  width: 70em;
+}
+.seccion-mapa iframe div div div p {
+  color: rgba(0, 0, 0, 0.754);
+  font-size: 1.6em;
+  font-family: serif;
+  text-align: center;
+}
+
+.main-form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(115, 166, 191, 0.743);
+}
+.main-form div h2,
+.main-form div p {
+  color: rgba(0, 0, 0, 0.754);
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: serif;
+  text-align: center;
+}
+
+/**-----COMIENZA MAIN-EL-JARDIN-----**/
+.main-el-jardin {
+  grid-area: main;
+  background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055)), url("../multimedia/fondo-el-jardin.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
+  /**---comienza atajos-el-jardin---**/
+}
+.main-el-jardin .titulo-seccion {
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+}
+.main-el-jardin .titulo-seccion h1 {
+  font-weight: bold;
+  background-color: rgba(59, 147, 157, 0.831372549);
+  color: rgba(255, 255, 255, 0.8705882353);
+  font-size: 3.8em;
+  font-family: "Gill Sans";
+  text-align: center;
+  text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
+}
+.main-el-jardin .atajos-el-jardin {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-el-jardin .atajos-el-jardin div {
+  width: 20em;
+  height: 23em;
+  margin: 1.9em 0 1.9em 0;
+  background-color: rgba(166, 166, 166, 0.4549019608);
+  padding: 1em;
+  border-radius: 1.5em;
+  text-align: center;
+}
+.main-el-jardin .atajos-el-jardin div a {
+  text-decoration: none;
+}
+.main-el-jardin .atajos-el-jardin div a p {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Gill Sans MT";
+  color: rgba(0, 0, 0, 0.754);
+  text-shadow: 3px 2px 3px rgba(227, 155, 48, 0.5411764706);
+}
+.main-el-jardin .atajos-el-jardin div a img {
+  margin: 1em;
+  width: 11em;
+  height: 11em;
+  align-items: center;
+}
+.main-el-jardin .atajos-el-jardin div a img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* COMIENZA MAIN/TALLERES */
+.main-talleres {
+  background: linear-gradient(rgba(141, 140, 140, 0.105), rgba(141, 140, 140, 0.105)), url("../multimedia/fondo-talleres.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  grid-area: main;
+  /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
+  /* COMIENZA SECCION VIDEOS-TALLERES */
+  /* COMIENZA SECCION TALLERES PRESENCIALES + TABLA DE CRONOGRAMA */
+}
+.main-talleres .titulo-seccion {
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+}
+.main-talleres .titulo-seccion h1 {
+  font-weight: bold;
+  background-color: rgba(59, 147, 157, 0.831372549);
+  color: rgba(255, 255, 255, 0.831372549);
+  font-size: 4.3em;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
+}
+.main-talleres .talleres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-talleres .talleres div {
+  margin: 3em 0;
+  width: 30em;
+  height: 30em;
+  border-radius: 15px;
+  border-color: #22445f;
+  box-shadow: -4px 2px 5px -3px black;
+}
+.main-talleres .talleres div a {
+  margin: 2em 0.5em;
+  padding: 1em;
+}
+.main-talleres .talleres div a h2 {
+  text-align: center;
+  font-size: 2.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(247, 233, 215, 0.9019607843);
+}
+.main-talleres .talleres div a h2:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.main-talleres .talleres div:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../multimedia/images/taller-macrame.jpg");
+  background-size: cover;
+}
+.main-talleres .talleres div:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/taller-hidroponia.jpg");
+  background-size: cover;
+}
+.main-talleres .talleres div:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/taller-huerta.jpeg");
+  background-size: cover;
+}
+.main-talleres .videos-talleres {
+  margin: 0.5em;
+  height: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-talleres .videos-talleres p {
+  width: 50%;
+  height: 25%;
+  margin: 1em;
+  padding: 1em;
+  background-color: rgba(62, 140, 143, 0.6862745098);
+  font-size: 2.4em;
+  color: rgb(226, 218, 182);
+  font-weight: bolt;
+  font-family: "Work Sans", sans-serif;
+  border-radius: 15px;
+  text-align: center;
+}
+.main-talleres .talleres-presenciales {
+  margin-bottom: 4em;
+  font-family: monospace;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  /* TABLA CRONOGRAMA TALLERES PRESENCIALES */
+}
+.main-talleres .talleres-presenciales h2 {
+  font-family: monospace;
+  font-size: 3em;
+}
+.main-talleres .talleres-presenciales th {
+  font-size: 2em;
+}
+.main-talleres .talleres-presenciales td {
+  font-size: 1.8em;
+}
+.main-talleres .talleres-presenciales table {
+  margin: 4em 0 4em 0;
+  border-color: lightseagreen;
+  border-style: solid;
+  border-collapse: collapse;
+  empty-cells: show;
+  table-layout: fixed;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.673);
+}
+
+/* COMIENZA MAIN/TIENDA */
+.main-tienda {
+  background: linear-gradient(rgba(208, 207, 207, 0.467), rgba(208, 207, 207, 0.467)), url("../multimedia/fondo-flores-en-frascos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
+  /* COMIENZA SECCION "NUESTROS DESTACADOS"(tienda.html) */
+  /* COMIENZA SECCION NOVEDADES (tienda.html) */
+}
+.main-tienda .titulo-seccion {
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+}
+.main-tienda .titulo-seccion h1 {
+  font-weight: bold;
+  background-color: rgba(59, 147, 157, 0.831372549);
+  color: rgba(255, 255, 255, 0.831372549);
+  font-size: 4.3em;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
+}
+.main-tienda .nuestros-destacados {
+  margin: 0.8em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-tienda .nuestros-destacados h2 {
+  color: rgba(247, 233, 215, 0.919);
+  font-size: 3em;
+  font-weight: bolt;
+  font-family: "Nunito", sans-serif;
+  text-shadow: -2px 2px 2px #22445f;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+.main-tienda .nuestros-destacados > div {
+  /* margin: 20px 0 20px 0; */
+  width: 33em;
+  height: 42em;
+  border-radius: 1, 5em;
+  box-shadow: 0 0 0.5em -0.2em black;
+  padding: 1em;
+}
+.main-tienda .nuestros-destacados > div p {
+  color: #eaedef;
+  font-size: 2.4em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: -2px 2px 2px #113539;
+}
+.main-tienda .nuestros-destacados > div:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../multimedia/images/regalos-unicos.jpg");
+  background-size: cover;
+}
+.main-tienda .nuestros-destacados > div:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/suscripciones-mensuales.jpeg");
+  background-size: cover;
+}
+.main-tienda .nuestros-destacados > div:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/productos-naturales.jpg");
+  background-size: cover;
+}
+.main-tienda .novedades {
+  margin: 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-tienda .novedades div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-tienda .novedades div img {
+  margin: 1em;
+  width: 25em;
+  height: 30em;
+  border-radius: 1.5em;
+  transition: 1s;
+}
+.main-tienda .novedades div img :hover {
+  transform: scale(1.1);
+}
+
+/**----comienza MAIN pages/CONTACTO-----**/
+.main-contacto {
+  background: linear-gradient(rgba(0, 0, 0, 0.318), rgba(0, 0, 0, 0.318)), url("../multimedia/fondo-contacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
+  /**-- SECCION CON INFORMACION DE CONTACTO EN MAIN-CONTACTO--**/
+}
+.main-contacto .titulo-seccion {
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+}
+.main-contacto .titulo-seccion h1 {
+  font-weight: bold;
+  background-color: rgba(59, 147, 157, 0.831372549);
+  color: rgba(255, 255, 255, 0.831372549);
+  font-size: 4.3em;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
+}
+.main-contacto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main-contacto .form-contacto div {
+  width: 90%;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(159, 159, 159, 0.413);
+}
+.main-contacto .form-contacto div div div {
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.main-contacto .form-contacto div input:focus {
+  width: 1em;
+  font-size: 2.2em;
+}
+.main-contacto .form-contacto div p {
+  text-align: center;
+  color: rgba(246, 244, 241, 0.7960784314);
+  font-size: 2em;
+  font-weight: bolt;
+  font-family: "Nunito", sans-serif;
+  text-shadow: -2px 1px 3px rgba(8, 51, 42, 0.737254902);
+}
+.main-contacto .form-contacto div h2 {
+  margin-bottom: 5px;
+  text-align: center;
+  color: rgba(247, 233, 215, 0.7960784314);
+  font-size: 2em;
+  font-weight: bolt;
+  font-family: "Nunito", sans-serif;
+  text-shadow: -2px 2px 2px rgba(148, 213, 243, 0.737254902);
+}
+.main-contacto .datos-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+.main-contacto .datos-contacto h3 {
+  text-decoration: none;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(243, 230, 206);
+  text-shadow: -1px 2px 2px rgba(21, 65, 70, 0.6901960784);
+}
+.main-contacto .datos-contacto a {
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(243, 230, 206);
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005));
+  background-position: right top;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+/*# sourceMappingURL=style.css.map */
