@@ -1,12 +1,11 @@
-@import "../base/variables";
-@import "../components/listas";
+/**-----HEADER-NO-INDEX-------**/
 
 header {
     grid-area: header;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #54738c2a;
+    background-color: #5e809c47;
     flex-wrap: wrap;
 
     nav ul {
@@ -25,14 +24,14 @@ header {
             a {
                 text-decoration: none;
                 color: #7698b5;
-                font-size: 3em;
+                font-size: 2.5em;
                 font-weight: bold;
                 font-family: 'Nunito', sans-serif;
                 text-shadow: 3px 3px 3px white;
 
                 &:hover {
                     color: #b758ee;
-                    font-size: 3.2em;
+                    font-size: 2.8em;
                     text-shadow: 3px 3px 3px white;
                     transition: 1s;
                 }

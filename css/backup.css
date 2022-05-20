@@ -95,7 +95,7 @@ body {
 }
 
 
-/**---TEXTO PRINCIPAL-index----**/
+/**---MAIN-TEXTO PRINCIPAL-index----**/
 .hero-section div {
     margin: 1em;
     width: 60%;
@@ -106,7 +106,7 @@ body {
 }
 
 .hero-section p {
-    font-size: 3.3em;
+    font-size: 2em;
     font-family: 'Libre Baskerville', serif;
     color: #2d99ba;
     text-shadow: -3px 3px 3px rgba(211, 203, 190, 0.908);
@@ -115,7 +115,7 @@ body {
     animation-duration: 5s;
 }
 
-/* seccion-mapa */
+/* MAIN-INDEX- seccion-mapa */
 .main .seccion-mapa {
     display: flex;
     justify-content: row;
@@ -183,7 +183,6 @@ p {
 
 .footer .logo img {
     margin: 1, 5em 6em;
-    width: 17em;
 }
 
 .footer .logo h3 {
@@ -581,6 +580,7 @@ h5 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 .talleres-presenciales h2 {
@@ -591,12 +591,12 @@ h5 {
 /* TABLA CRONOGRAMA TALLERES PRESENCIALES */
 
 .talleres-presenciales th {
-    font-family: 'Nunito', sans-serif;
+    
     font-size: 2em;
 }
 
 .talleres-presenciales td {
-    font-family: 'Nunito', sans-serif;
+    
     font-size: 1.8em;
 }
 
@@ -773,13 +773,13 @@ h5 {
         height: 38em;
     }
 
-    .nuestros-destacados h3 {
+    .nuestros-destacados h2 {
 
-        font-size: 3.6em;
+        font-size: 2.4em;
     }
 
     .nuestros-destacados p {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .novedades div img {
@@ -900,12 +900,12 @@ h5 {
         height: 30em;
     }
 
-    .nuestros-destacados h3 {
-        font-size: 3em;
+    .nuestros-destacados h2 {
+        font-size: 2em;
     }
 
     .nuestros-destacados p {
-        font-size: 2.4em;
+        font-size: 1.5em;
     }
 
     .novedades div img {
@@ -1062,8 +1062,8 @@ h5 {
         height: 28em;
     }
 
-    .nuestros-destacados h3 {
-        font-size: 2.8em;
+    .nuestros-destacados h2 {
+        font-size: 1.8em;
     }
 
 }

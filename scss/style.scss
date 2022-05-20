@@ -1,8 +1,15 @@
-@import '../scss/base/root';
-@import '../scss/base/footer';
-@import '../scss/components/header';
-@import '../scss/components/listas';
-@import '../scss/components/mediaQuery';
+@import './base/_root.scss';
+@import './base/variables';
+@import './components/listas';
+@import './components/mediaQuery';
+@import './components/producto';
+@import './layout/footer';
+@import './layout/grid';
+@import './layout/header';
+@import './layout/main';
+
+
+
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005));
@@ -10,20 +17,5 @@ body {
     background-repeat: repeat-x;
     background-attachment: fixed;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 4px 0px;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer"
-}
 
-.header-hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    grid-area: header;
-}
+

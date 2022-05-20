@@ -1,0 +1,56 @@
+/**----COMIENZA FOOTER----**/
+.footer {
+    grid-area: footer;
+    background-color: #54738c2a;
+    bottom: 0;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .logo img {
+            margin: 1, 5em 6em;
+
+            h3 {
+                text-decoration: none;
+                font-size: 1.5em;
+                font-weight: bold;
+                font-family: 'Libre Baskerville', serif;
+                color: #134247e9;
+                margin-left: 27%;
+            }
+        }
+
+        .redes-sociales a img {
+            width: 3.8em;
+            margin: 1em;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .contacto div {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0.5em;
+
+            img {
+                float: left;
+                width: 2.7em;
+                margin-right: 5%;
+
+                h4,
+                h5 {
+                    font-size: 1.7em;
+                    font-family: 'Nunito', sans-serif;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
