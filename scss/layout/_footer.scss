@@ -1,7 +1,10 @@
+@import "../base/variables";
+@import "../base/mapas";
+
 /**----COMIENZA FOOTER----**/
 .footer {
     grid-area: footer;
-    background-color: #54738c2a;
+    background-color: $color-claro;
     bottom: 0;
 
     div {
@@ -17,14 +20,14 @@
                 text-decoration: none;
                 font-size: 1.5em;
                 font-weight: bold;
-                font-family: 'Libre Baskerville', serif;
-                color: #134247e9;
+                font-family: nth($list: $font-family, $n: 4);
+                color: $color-claro;
                 margin-left: 27%;
             }
         }
 
         .redes-sociales a img {
-            width: 3.8em;
+            width: 3.5em;
             margin: 1em;
             transition: 1s;
 
@@ -41,7 +44,7 @@
 
             img {
                 float: left;
-                width: 2.7em;
+                width: 2.5em;
                 margin-right: 5%;
 
                 h4,

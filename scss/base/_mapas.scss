@@ -1,0 +1,14 @@
+
+@import "../base/variables";
+@import "../base/variables";
+@import "../components/fuentes";
+
+$titulo-principal:(
+    font-weight: bold,
+    bg-color: $color-tres,
+    color: $color-uno,
+    font-size: 4.3em,
+    text-align: center,
+    text-shadow: -3px -2px 2px $color-oscuro,
+);
+

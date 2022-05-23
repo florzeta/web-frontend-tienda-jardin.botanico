@@ -1,3 +1,6 @@
+@import "../base/variables";
+@import "../base/mapas";
+
 /**-----HEADER-NO-INDEX-------**/
 
 header {
@@ -5,7 +8,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: nth($list: $colors, $n: 26);
+    background-color: $color-claro;
     flex-wrap: wrap;
 
     nav ul {
@@ -13,7 +16,6 @@ header {
         list-style: none;
         justify-content: space-around;
         align-items: center;
-        background-color: nth($list: $colors, $n: 13);
         border-radius: 2em;
         margin-right: 2em;
         flex-wrap: wrap;
@@ -23,16 +25,16 @@ header {
 
             a {
                 text-decoration: none;
-                color: nth($list: $colors, $n: 14) ;
+                color: $color-oscuro;
                 font-size: nth($list: $font-size, $n: 5 );
                 font-weight: bold;
-                font-family: nth($list: $font-family, $n: 2);
-                text-shadow: 3px 3px 3px white;
+                font-family: nth($list: $font-family, $n: 1);
+                text-shadow: 3px 3px 3px $color-claro;
 
                 &:hover {
-                    color: nth($list: $colors, $n: 4);
+                    color: $color-muy-oscuro;
                     font-size: nth($list: $font-size, $n: 6 );
-                    text-shadow: 3px 3px 3px white;
+                    text-shadow: 3px 3px 3px $color-uno;
                     transition: 1s;
                 }
             }
@@ -46,14 +48,13 @@ header-hero {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* background-color: #11324d9c; */
     grid-area: header;
+    background-color: $color-claro;
 
     nav {
         margin: 0.4em 0.1em 0.4em 0.1em;
         padding: 0.4em;
         width: 100%;
-        background-color: nth($list: $colors, $n: 1);
         border-radius: 2em;
 
         ul {
@@ -65,16 +66,15 @@ header-hero {
 
             li a {
                 text-decoration: none;
-                color: nth($list: $colors, $n: 2);
-                font-size: nth($list: $font-size, $n:10 );
+                font-size: nth($list: $font-size, $n: 4 );
                 font-weight: bold;
-                font-family: nth($list: $font-family, $n: 2);
-                text-shadow: -3px 2px 2px rgba(115, 157, 186, 0.655);
+                font-family: nth($list: $font-family, $n: 1);
+                text-shadow: -2px 2px 2px $color-oscuro;
 
                 &:hover {
-                    color: nth($list: $colors, $n: 4);
-                    font-size: nth($list: $font-size, $n: 4 );
-                    text-shadow: -3px 2px 3px white;
+                    color: $color-muy-oscuro;
+                    font-size: nth($list: $font-size, $n: 5 );
+                    text-shadow: -3px 2px 3px $color-claro;
                     transition: 1s;
                 }
             }

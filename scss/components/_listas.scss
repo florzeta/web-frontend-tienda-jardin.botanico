@@ -1,51 +1,49 @@
-/* lista de los colores de mi proyecyo */
-$colors:
-rgba(86, 162, 200, 0.293),
-#ffffffde,
-rgba(115, 157, 186, 0.655),
-#b758eec7,
-white,
-#2d99ba,
-rgba(211, 203, 190, 0.908),
-rgba(99, 128, 146, 0.12),
-rgba(115, 166, 191, 0.743),
-rgba(0, 0, 0, 0.754),
-#54738c2a,
-#1d5c63e9,
-#f7e9d7bf,
-#7698b5,
-#3b939dd4,
-rgba(159, 159, 159, 0.413),
-#f7e9d7cb,
-#94d5f3bc,
-rgb(243, 230, 206),
-#154146b0,
-#a6a6a674,
-#e7a64692,
-#56748c,
-#3e8c8faf,
-lightseagreen,
-#5e809c47;
+/* lista de los colores de mi proyecto */
+// $colors:
+// rgba(86, 162, 200, 0.293), /*1*/
+// #ffffffde,/*2*/
+// rgba(115, 157, 186, 0.655),/*3*/
+// #b758eec7,/*4*/
+// white,/*5*/
+// #2d99ba,/*6*/
+// rgba(211, 203, 190, 0.908),/*7*/
+// rgba(99, 128, 146, 0.12),/*8*/
+// rgba(115, 166, 191, 0.743),/*9*/
+// rgba(0, 0, 0, 0.754),/*10*/
+// #54738c2a,/*11*/
+// #1d5c63e9,/*12*/
+// #f7e9d7bf,/*13*/
+// #7698b5,/*14*/
+// #3b939dd4,/*15*/
+// rgba(159, 159, 159, 0.413),/*16*/
+// #f7e9d7cb,/*17*/
+// #94d5f3bc,/*18*/
+// rgb(243, 230, 206),/*19*/
+// #154146b0,/*20*/
+// #a6a6a674,/*21*/
+// #e7a64692,/*22*/
+// #56748c,/*23*/
+// #3e8c8faf,/*24*/
+// lightseagreen,/*25*/
+// #5e809c47;/*26*/
 
 /*lista de los font-size de mi proyecto*/
 $font-size:
-1.4em,
-1.6em,
-1.8em,
-2em,
-2.5em,
-2.8em,
-3em,
-3.2em,
-3.4em,
-3.6em,
-3.8em;
+1.4em,/*1*/
+1.6em,/*2*/
+1.8em,/*3*/
+2em,/*4*/
+2.5em,/*5*/
+2.8em,/*6*/
+3em,/*7*/
+3.2em,/*8*/
+3.4em,/*9*/
+3.6em,/*10*/
+3.8em;/*11*/
 
 /*lista de los font-family de mi proyecto*/
 $font-family:
-'Libre Baskerville', serif,
-'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,
-'Nunito', sans-serif,
-'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,
-'Work Sans', sans-serif,
-'monospace';
+'Akshar', sans-serif,/*1*/
+'Dosis', sans-serif,/*2*/
+'Inter', sans-serif,/*3*/     /*letras en imagenes y agregados*/
+'Karma', serif,/*4*/ /*para informacion de contacto*/

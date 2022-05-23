@@ -1,3 +1,7 @@
+@import "../base/variables";
+@import "../base/mapas";
+
+
 main {
     grid-area: main;
 }
@@ -25,10 +29,10 @@ main {
         align-items: center;
 
         h1 {
-            font-size: nth($list: $font-size, $n:8 );
+            font-size: nth($list: $font-size, $n:6 );
             font-family: nth($list: $font-family, $n:1 );
-            color: nth($list: $colors, $n:6);
-            text-shadow: -3px 3px 3px rgba(211, 203, 190, 0.908);
+            color: $color-muy-oscuro;
+            text-shadow: -3px 3px 3px $color-tres;
             text-align: center;
             animation-name: entradaTextoPrincipal;
             animation-duration: 5s;
@@ -44,7 +48,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     grid-area: main;
-    background-color: nth($list: $colors, $n: 17);
+    background-color: $color-uno;
     margin: 3em 0;
     flex-wrap: wrap;
 
@@ -55,7 +59,7 @@ main {
             width: 70em;
 
             div p {
-                color: nth($list: $colors, $n: 10);
+                color: black;
                 font-size: nth($list: $font-size, $n: 2);
                 font-family: nth($list: $font-family, $n: 2);
                 text-align: center;
@@ -69,15 +73,15 @@ main {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: nth($list: $colors, $n: 9);
+    background-color: $color-tres;
 
     h2,
     p {
-        color: nth($list: $colors, $n: 10);
+        color: black;
         font-size: nth($list: $font-size, $n: 2);
-        font-weight: bold;
-        font-family: nth($list: $font-family, $n: 2);
-        text-align: center;
+        font-weight: map-get($map: $titulo-principal, $key: font-weight);
+        font-family: nth($list: $font-family, $n: 1);
+        text-align: map-get($map: $titulo-principal, $key: text-align);
     }
 }
 
@@ -87,7 +91,7 @@ main {
 /**-----COMIENZA MAIN-EL-JARDIN-----**/
 .main-el-jardin {
     grid-area: main;
-    background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055)), url("../multimedia/fondo-el-jardin.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055)),$color-claro /*url("../multimedia/fondo-el-jardin.jpg")*/;
     background-size: contain;
     background-attachment: fixed;
 
@@ -99,12 +103,12 @@ main {
 
         h1 {
             font-weight: bold;
-            background-color: nth($list: $colors, $n:15 );
-            color: nth($list: $colors, $n: 2);
-            font-size: nth($list: $font-size, $n: 11);
+            background-color: map-get($map: $titulo-principal, $key: bg-color);
+            color: map-get($map: $titulo-principal, $key: color);
+            font-size: nth($list: $font-size, $n: 7);
             font-family: nth($list: $font-family, $n: 3);
-            text-align: center;
-            text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
+            text-align: map-get($map: $titulo-principal, $key: text-align);
+            text-shadow: map-get($map: $titulo-principal, $key: text-shadow);
 
         }
     }
@@ -119,9 +123,9 @@ main {
 
         div {
             width: 20em;
-            height: 23em;
+            height: 20em;
             margin: 1.9em 0 1.9em 0;
-            background-color: #a6a6a674;
+            background-color: #a6a6a664;
             padding: 1em;
             border-radius: 1.5em;
             text-align: center;
@@ -130,18 +134,18 @@ main {
                 text-decoration: none;
 
                 p {
-                    font-size: nth($list: $font-size, $n: 4);
+                    font-size: nth($list: $font-size, $n: 3);
                     font-weight: bold;
-                    font-family: nth($list: $font-family, $n: 4);
-                    color: nth($list: $colors, $n: 10);
-                    text-shadow: 3px 2px 3px #e39b308a;
+                    font-family: nth($list: $font-family, $n: 3);
+                    color: black;
+                    text-shadow: -3px 2px 2px $color-tres;
 
                 }
 
                 img {
                     margin: 1em;
-                    width: 11em;
-                    height: 11em;
+                    width: 9em;
+                    height: 9em;
                     align-items: center;
 
                     &:hover {
@@ -171,12 +175,12 @@ main {
 
         h1 {
             font-weight: bold;
-            background-color: #3b939dd4;
-            color: #ffffffd4;
-            font-size: 4.3em;
-            font-family: 'Nunito', sans-serif;
-            text-align: center;
-            text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
+            background-color: map-get($map: $titulo-principal, $key: bg-color);
+            color: map-get($map: $titulo-principal, $key: color);
+            font-size: nth($list: $font-size, $n: 7);
+            font-family: nth($list: $font-family, $n: 3);
+            text-align: map-get($map: $titulo-principal, $key: text-align);
+            text-shadow: map-get($map: $titulo-principal, $key: text-shadow);
 
         }
     }
@@ -193,7 +197,7 @@ main {
             width: 30em;
             height: 30em;
             border-radius: 15px;
-            border-color: #22445f;
+            border-color: $color-muy-oscuro;
             box-shadow: -4px 2px 5px -3px black;
 
             a {
@@ -205,7 +209,7 @@ main {
                     font-size: 2.6em;
                     text-transform: uppercase;
                     font-weight: bold;
-                    color: #f7e9d7e6;
+                    color: $color-claro;
 
                     &:hover {
                         transform: scale(1.1);
@@ -251,9 +255,9 @@ main {
             margin: 1em;
             padding: 1em;
 
-            background-color: #3e8c8faf;
+            background-color: $color-cuatro;
             font-size: 2.4em;
-            color: rgb(226, 218, 182);
+            color: $color-uno;
             font-weight: bolt;
             font-family: 'Work Sans', sans-serif;
             border-radius: 15px;
@@ -266,16 +270,16 @@ main {
     /* COMIENZA SECCION TALLERES PRESENCIALES + TABLA DE CRONOGRAMA */
     .talleres-presenciales {
         margin-bottom: 4em;
-        font-family: monospace;
+        font-family: nth($list: $font-family, $n: 6);
         flex-wrap: wrap;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        font-family: 'Nunito', sans-serif;
+        font-family: nth($list: $font-family, $n: 3);
 
         h2 {
-            font-family: monospace;
+            font-family: nth($list: $font-family, $n: 6);
             font-size: 3em;
 
         }
@@ -291,13 +295,13 @@ main {
 
         table {
             margin: 4em 0 4em 0;
-            border-color: lightseagreen;
+            border-color: $color-oscuro;
             border-style: solid;
             border-collapse: collapse;
             empty-cells: show;
             table-layout: fixed;
             width: 60%;
-            background: rgba(255, 255, 255, 0.673);
+            background: $color-claro;
         }
 
     }
@@ -321,12 +325,12 @@ main {
 
         h1 {
             font-weight: bold;
-            background-color: #3b939dd4;
-            color: #ffffffd4;
-            font-size: 4.3em;
-            font-family: 'Nunito', sans-serif;
-            text-align: center;
-            text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
+            background-color: map-get($map: $titulo-principal, $key: bg-color);
+            color: map-get($map: $titulo-principal, $key: color);
+            font-size: nth($list: $font-size, $n: 7);
+            font-family: nth($list: $font-family, $n: 3);
+            text-align: map-get($map: $titulo-principal, $key: text-align);
+            text-shadow: map-get($map: $titulo-principal, $key: text-shadow);
 
         }
     }
@@ -439,12 +443,12 @@ main {
 
         h1 {
             font-weight: bold;
-            background-color: #3b939dd4;
-            color: #ffffffd4;
-            font-size: 4.3em;
-            font-family: 'Nunito', sans-serif;
-            text-align: center;
-            text-shadow: -2px 2px 3px rgba(255, 255, 255, 0.831);
+            background-color: map-get($map: $titulo-principal, $key: bg-color);
+            color: map-get($map: $titulo-principal, $key: color);
+            font-size: nth($list: $font-size, $n: 7);
+            font-family: nth($list: $font-family, $n: 3);
+            text-align: map-get($map: $titulo-principal, $key: text-align);
+            text-shadow: map-get($map: $titulo-principal, $key: text-shadow);
         }
     }
 

@@ -1,14 +1,17 @@
+@import "../base/variables";
+@import "../base/mapas";
+
 /**--COMIENZA CLASS PRODUCTOS (el-jardin)--**/
 .productos {
     margin: 1em;
     background: linear-gradient(rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.103));
     h2 {
         text-align: center;
-        font-size: 2.8em;
+        font-size: nth($list: $font-size, $n: 4);
         margin: 2em 0 2em 0;
-        font-family: 'Nunito', sans-serif;
-        color: rgba(0, 0, 0, 0.823);
-        text-shadow: 3px 2px 3px #e7a64692;
+        font-family: nth($list: $font-family, $n: 2);
+        color: black;
+        text-shadow: -2px 2px 3px $color-tres;
     }
     div {
         height: 23em;
@@ -23,15 +26,14 @@
             transition: 1s;
         &:hover {
             transform: scale(1.1);
-            border-color: #1d5c639e;
         }
         }
         a {
             text-decoration: none;
-            background-color: #56748c;
+            background-color: $color-cuatro;
             color: whitesmoke;
             font-weight: bolder;
-            font-size: 3em;
+            font-size: nth($list: $font-size, $n: 4);
             text-align: center;
             padding: 1em;
             border-radius: 1em;
