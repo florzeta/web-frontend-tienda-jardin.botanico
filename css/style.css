@@ -11,15 +11,6 @@
   box-sizing: border-box;
 }
 
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
 /* -------ANIMACIONES-------- */
 @keyframes entradaTextoPrincipal {
   from {
@@ -326,15 +317,6 @@ p {
     font-size: 1.8em;
   }
 }
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
 /**--COMIENZA CLASS PRODUCTOS (el-jardin)--**/
 .productos {
   margin: 1em;
@@ -376,15 +358,6 @@ p {
   margin: 2em 0 20px 0;
 }
 
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
 /**----COMIENZA FOOTER----**/
 .footer {
   grid-area: footer;
@@ -441,15 +414,6 @@ p {
   grid-template-areas: "header header" "main main" "footer footer";
 }
 
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
 /**-----HEADER-NO-INDEX-------**/
 header {
   grid-area: header;
@@ -477,7 +441,7 @@ header nav ul li a {
   font-size: 2.5em;
   font-weight: bold;
   font-family: "Akshar";
-  text-shadow: 3px 3px 3px #FEF5ED;
+  text-shadow: -3px 2px 3px #FEF5ED;
 }
 header nav ul li a:hover {
   color: #404e42;
@@ -487,49 +451,40 @@ header nav ul li a:hover {
 }
 
 /**--------HEADER/NAV  (index)--------**/
-header-hero {
+.header-hero {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   grid-area: header;
   background-color: #FEF5ED;
 }
-header-hero nav {
+.header-hero nav {
   margin: 0.4em 0.1em 0.4em 0.1em;
   padding: 0.4em;
   width: 100%;
   border-radius: 2em;
 }
-header-hero nav ul {
+.header-hero nav ul {
   margin: 1em;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
-header-hero nav ul li a {
+.header-hero nav ul li a {
   text-decoration: none;
   font-size: 2em;
   font-weight: bold;
   font-family: "Akshar";
-  text-shadow: -2px 2px 2px #5F7161;
+  text-shadow: -3px 2px 2px #ADC2A9;
 }
-header-hero nav ul li a:hover {
+.header-hero nav ul li a:hover {
   color: #404e42;
   font-size: 2.5em;
   text-shadow: -3px 2px 3px #FEF5ED;
   transition: 1s;
 }
 
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
-/* variables */
-/*variables*/
-/*colores*/
 main {
   grid-area: main;
 }
