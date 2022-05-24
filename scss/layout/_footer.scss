@@ -8,17 +8,14 @@
     bottom: 0;
 
     div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+       @extend %flex;
 
         .logo img {
             margin: 1, 5em 6em;
 
             h3 {
                 text-decoration: none;
-                font-size: 1.5em;
+                font-size: nth($list: $font-size, $n: 2);
                 font-weight: bold;
                 font-family: nth($list: $font-family, $n: 4);
                 color: $color-claro;
@@ -49,8 +46,8 @@
 
                 h4,
                 h5 {
-                    font-size: 1.7em;
-                    font-family: 'Nunito', sans-serif;
+                    font-size: nth($list: $font-size, $n: 2);
+                    font-family: nth($list: $font-family, $n: 4);
                     text-align: center;
                 }
             }

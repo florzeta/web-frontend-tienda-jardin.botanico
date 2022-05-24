@@ -9,17 +9,15 @@ main {
 /**---MAIN-TEXTO PRINCIPAL-index----**/
 .hero-section {
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)), url("../multimedia/fondo-floral-azul.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)), url("https://i.ibb.co/Y2C9XH2/fondo-floral-azul.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
 
-    display: flex;
+    @extend %flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 
     div {
         margin: 1em;
@@ -29,8 +27,8 @@ main {
         align-items: center;
 
         h1 {
-            font-size: nth($list: $font-size, $n:6 );
-            font-family: nth($list: $font-family, $n:1 );
+            font-size: nth($list: $font-size, $n: 6);
+            font-family: nth($list: $font-family, $n: 1);
             color: $color-muy-oscuro;
             text-shadow: -3px 3px 3px $color-tres;
             text-align: center;
@@ -43,14 +41,13 @@ main {
 
 //  seccion-mapa-index //
 .seccion-mapa {
-    display: flex;
+
     justify-content: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend %flex;
     grid-area: main;
     background-color: $color-uno;
     margin: 3em 0;
-    flex-wrap: wrap;
+
 
     iframe {
         margin: 2em;
@@ -69,11 +66,9 @@ main {
 }
 
 .main-form div {
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     background-color: $color-tres;
+    @extend %flex;
 
     h2,
     p {
@@ -91,7 +86,7 @@ main {
 /**-----COMIENZA MAIN-EL-JARDIN-----**/
 .main-el-jardin {
     grid-area: main;
-    background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055)),$color-claro /*url("../multimedia/fondo-el-jardin.jpg")*/;
+    background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055)), url("https://i.ibb.co/7Sfk5N7/fondo-el-jardin.jpg");
     background-size: contain;
     background-attachment: fixed;
 
@@ -116,10 +111,7 @@ main {
     /**---comienza atajos-el-jardin---**/
     .atajos-el-jardin {
         margin: 1em;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        @extend %flex;
 
         div {
             width: 20em;
@@ -160,7 +152,7 @@ main {
 
 /* COMIENZA MAIN/TALLERES */
 .main-talleres {
-    background: linear-gradient(rgba(141, 140, 140, 0.105), rgba(141, 140, 140, 0.105)), url("../multimedia/fondo-talleres.jpg");
+    background: linear-gradient(rgba(141, 140, 140, 0.105), rgba(141, 140, 140, 0.105)), url("https://i.ibb.co/ggNYPWd/fondo-talleres.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,16 +178,13 @@ main {
     }
 
     .talleres {
-        display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        @extend %flex;
 
         div {
             margin: 3em 0;
-            width: 30em;
-            height: 30em;
+            width: 28em;
+            height: 28em;
             border-radius: 15px;
             border-color: $color-muy-oscuro;
             box-shadow: -4px 2px 5px -3px black;
@@ -206,11 +195,11 @@ main {
 
                 h2 {
                     text-align: center;
-                    font-size: 2.6em;
+                    font-size: nth($list: $font-size, $n: 4);
                     text-transform: uppercase;
                     font-weight: bold;
                     color: $color-claro;
-
+                    text-decoration: none;
                     &:hover {
                         transform: scale(1.1);
                         transition: 1s;
@@ -219,20 +208,20 @@ main {
             }
 
             &:nth-child(1) {
-                background: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url("../multimedia/images/taller-macrame.jpg");
+                background: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url("https://i.ibb.co/MDKh9W7/taller-macrame.jpg");
                 background-size: cover;
             }
 
             &:nth-child(2) {
 
-                background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/taller-hidroponia.jpg");
+                background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/WpvTWbB/taller-hidroponia.jpg");
                 background-size: cover;
 
             }
 
             &:nth-child(3) {
 
-                background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/taller-huerta.jpeg");
+                background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/hWk2k0p/taller-huerta.jpg");
                 background-size: cover;
             }
 
@@ -244,22 +233,20 @@ main {
     .videos-talleres {
         margin: 0.5em;
         height: 50em;
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        @extend %flex;
 
         p {
-            width: 50%;
-            height: 25%;
+            width: 60%;
+            height: 30%;
             margin: 1em;
-            padding: 1em;
+            padding: 0.5em;
 
             background-color: $color-cuatro;
-            font-size: 2.4em;
-            color: $color-uno;
+            font-size: nth($list: $font-size, $n: 5);
+            color: $color-muy-claro;
             font-weight: bolt;
-            font-family: 'Work Sans', sans-serif;
+            font-family: nth($list: $font-family, $n: 3);
             border-radius: 15px;
             text-align: center;
 
@@ -270,27 +257,22 @@ main {
     /* COMIENZA SECCION TALLERES PRESENCIALES + TABLA DE CRONOGRAMA */
     .talleres-presenciales {
         margin-bottom: 4em;
-        font-family: nth($list: $font-family, $n: 6);
-        flex-wrap: wrap;
-        display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        font-family: nth($list: $font-family, $n: 3);
+        @extend %flex;
 
         h2 {
-            font-family: nth($list: $font-family, $n: 6);
-            font-size: 3em;
+            font-family: nth($list: $font-family, $n: 2);
+            font-size: nth($list: $font-size, $n: 2);
 
         }
 
         /* TABLA CRONOGRAMA TALLERES PRESENCIALES */
         th {
-            font-size: 2em;
+            font-size: nth($list: $font-size, $n: 1);
         }
 
         td {
-            font-size: 1.8em;
+            font-size: nth($list: $font-size, $n: 2);
         }
 
         table {
@@ -300,8 +282,8 @@ main {
             border-collapse: collapse;
             empty-cells: show;
             table-layout: fixed;
-            width: 60%;
-            background: $color-claro;
+            width: 70%;
+            background: $color-muy-claro;
         }
 
     }
@@ -311,7 +293,7 @@ main {
 
 /* COMIENZA MAIN/TIENDA */
 .main-tienda {
-    background: linear-gradient(rgba(208, 207, 207, 0.467), rgba(208, 207, 207, 0.467)), url("../multimedia/fondo-flores-en-frascos.jpg");
+    background: linear-gradient(rgba(208, 207, 207, 0.467), rgba(208, 207, 207, 0.467)), url("https://i.ibb.co/NWQtCMY/fondo-flores-en-frascos.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -338,102 +320,112 @@ main {
     /* COMIENZA SECCION "NUESTROS DESTACADOS"(tienda.html) */
 
     .nuestros-destacados {
-        margin: 0.8em;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        margin: 2em;
+        padding: 1em;
+        flex-direction: column;
+        @extend %flex;
+
 
         h2 {
-            color: rgba(247, 233, 215, 0.919);
-            font-size: 3em;
+            color: $color-uno;
+            font-size: nth($list: $font-size, $n: 6);
             font-weight: bolt;
-            font-family: 'Nunito', sans-serif;
-            text-shadow: -2px 2px 2px #22445f;
+            font-family: nth($list: $font-size, $n: 2);
+            text-shadow: -2px 2px 2px $color-muy-oscuro;
             text-align: center;
             background-repeat: no-repeat;
         }
 
-        >div {
-            /* margin: 20px 0 20px 0; */
-            width: 33em;
-            height: 42em;
-            border-radius: 1, 5em;
-            box-shadow: 0 0 0.5em -0.2em black;
-            padding: 1em;
+        >div img{
+            width: 30em;
+            height: 25em;
+            flex-direction: column;
+            @extend %flex;
 
             p {
-                color: #eaedef;
-                font-size: 2.4em;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                text-shadow: -2px 2px 2px #113539;
+                color: $color-claro;
+                font-size: nth($list: $font-size, $n: 5);
+                font-family: nth($list: $font-family, $n: 4);
+                text-shadow: -2px 2px 2px $color-tres;
+                height: 15em;
+                border-radius: 1, 5em;
+                box-shadow: 0 0 0.5em -0.2em black;
+                padding: 1em;
             }
+
 
             &:nth-child(2) {
 
-                background: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url("../multimedia/images/regalos-unicos.jpg");
+                background: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url("https://i.ibb.co/Sczzn4T/regalos-unicos.jpg");
                 background-size: cover;
             }
 
             &:nth-child(3) {
-                background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/suscripciones-mensuales.jpeg");
+                background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/fCZj39d/suscripciones-mensuales.jpg");
                 background-size: cover;
 
             }
 
             &:nth-child(4) {
-                background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/productos-naturales.jpg");
+                background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/dGFcct2/productos-naturales.jpg");
                 background-size: cover;
 
             }
+
+
         }
+
     }
+}
 
-    /* COMIENZA SECCION NOVEDADES (tienda.html) */
-    .novedades {
-        margin: 2em;
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+/* COMIENZA SECCION NOVEDADES (tienda.html) */
+.novedades {
+    margin: 2em;
+    padding: 1em;
+    flex-direction: column;
+    @extend %flex;
 
-        div {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+    div {
+        @extend %flex;
 
-            img {
-                margin: 1em;
-                width: 25em;
-                height: 30em;
-                border-radius: 1.5em;
-                transition: 1s;
+        img {
+            margin: 1em;
+            width: 18em;
+            height: 20em;
+            border-radius: 1.5em;
+            transition: 1s;
 
-                :hover {
-                    transform: scale(1.1);
+            :hover {
+                transform: scale(1.1);
 
-                }
             }
         }
 
+        h3 {
+            margin: 1em;
+            color: $color-muy-claro;
+            font-size: nth($list: $font-size, $n: 6);
+            font-family: nth($list: $font-family, $n: 2);
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: -3px 3px 3px $color-tres;
+        }
     }
 
 }
 
+
+
 /**----comienza MAIN pages/CONTACTO-----**/
 .main-contacto {
-    background: linear-gradient(rgba(0, 0, 0, 0.318), rgba(0, 0, 0, 0.318)), url("../multimedia/fondo-contacto.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.318), rgba(0, 0, 0, 0.318)), url("https://i.ibb.co/ZxDJFfg/fondo-contacto.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     grid-area: main;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    padding: 1em;
 
     /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
     .titulo-seccion {
@@ -449,15 +441,13 @@ main {
             font-family: nth($list: $font-family, $n: 3);
             text-align: map-get($map: $titulo-principal, $key: text-align);
             text-shadow: map-get($map: $titulo-principal, $key: text-shadow);
+
         }
     }
 
     div {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-items: center;
+        @extend %flex;
     }
 
     .form-contacto div {
@@ -468,7 +458,9 @@ main {
         align-items: center;
         background-color: rgba(159, 159, 159, 0.413);
 
-        div div {
+        div {
+            width: 60%;
+            display: flex;
             flex-direction: row;
             text-align: center;
             align-items: center;
@@ -476,55 +468,52 @@ main {
 
         input:focus {
             width: 1em;
-            font-size: 2.2em;
+            font-size: nth($list: $font-size, $n: 4);
         }
 
         p {
             text-align: center;
             color: #f6f4f1cb;
-            font-size: 2em;
+            font-size: nth($list: $font-size, $n: 5);
             font-weight: bolt;
-            font-family: "Nunito", sans-serif;
-            text-shadow: -2px 1px 3px #08332abc;
+            font-family: nth($list: $font-family, $n: 1);
+            text-shadow: -2px 1px 3px $color-muy-oscuro;
         }
 
         h2 {
             margin-bottom: 5px;
             text-align: center;
-            color: #f7e9d7cb;
-            font-size: 2em;
+            color: $color-uno;
+            font-size: nth($list: $font-size, $n: 2);
             font-weight: bolt;
-            font-family: "Nunito", sans-serif;
-            text-shadow: -2px 2px 2px #94d5f3bc;
+            font-family: nth($list: $font-family, $n: 3);
+            text-shadow: -2px 2px 2px $color-tres;
         }
     }
 
     /**-- SECCION CON INFORMACION DE CONTACTO EN MAIN-CONTACTO--**/
 
     .datos-contacto {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         text-decoration: none;
+        @extend %flex;
 
         h3 {
             text-decoration: none;
-            font-size: 1.6em;
+            font-size: nth($list: $font-size, $n: 2);
             font-weight: bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(243, 230, 206);
-            text-shadow: -1px 2px 2px #154146b0;
+            font-family: nth($list: $font-family, $n: 3);
+            color: $color-uno;
+            text-shadow: -1px 2px 2px $color-oscuro;
         }
 
         a {
             text-decoration: none;
-            font-size: 1.3em;
+            font-size: nth($list: $font-family, $n: 1);
             font-weight: bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(243, 230, 206);
+            font-family: nth($list: $font-family, $n: 3);
+            color: $color-uno;
 
         }
     }
-
 }

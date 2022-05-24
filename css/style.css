@@ -11,6 +11,13 @@
   box-sizing: border-box;
 }
 
+.main-contacto .datos-contacto, .main-contacto div, .novedades div, .novedades, .main-tienda .nuestros-destacados > div img, .main-tienda .nuestros-destacados, .main-talleres .talleres-presenciales, .main-talleres .videos-talleres, .main-talleres .talleres, .main-el-jardin .atajos-el-jardin, .main-form div, .seccion-mapa, .hero-section, .header-hero nav ul, .header-hero, header nav ul, header, .footer div, .productos div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* -------ANIMACIONES-------- */
 @keyframes entradaTextoPrincipal {
   from {
@@ -29,66 +36,65 @@
 /* media queries para desktop grande- 1200px */
 @media screen and (max-width: 1200px) {
   /* ---INDEX ----*/
-  .header-hero p {
-    font-size: 3em;
+  .hero-section h1 {
+    font-size: 1.8em;
   }
 
   .header-hero nav ul li a {
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
 
   .header-hero nav ul li a:hover {
-    font-size: 2.5em;
+    font-size: 2em;
+  }
+
+  /*----MAPA INDEX-----*/
+  .seccion-mapa div div {
+    width: 30em;
+  }
+
+  .seccion-mapa div p {
+    font-size: 1.4em;
   }
 
   /* ----TIENDA----- */
   .nuestros-destacados > div {
-    margin: 10px;
-    width: 25em;
-    height: 38em;
+    width: 20em;
+    height: 20em;
   }
 
   .nuestros-destacados h2 {
-    font-size: 2.4em;
-  }
-
-  .nuestros-destacados p {
     font-size: 2em;
   }
 
-  .novedades div img {
-    width: 20em;
-    height: 26em;
+  .nuestros-destacados p {
+    font-size: 1.8em;
   }
 
-  .novedades h4 {
-    font-size: 2.8em;
+  .novedades div img {
+    width: 15em;
+    height: 18em;
+  }
+
+  .novedades h3 {
+    font-size: 2em;
   }
 
   /*---- TALLERES--- */
-  .videos-talleres p {
-    width: 70%;
-    height: 25%;
+  .main-talleres .talleres div {
+    width: 24em;
+    height: 24em;
   }
 
-  .talleres-presenciales th {
-    font-family: "Nunito", sans-serif;
+  .main-talleres .videos-talleres p {
+    margin: 0.5em;
+    width: 90%;
+    height: 40%;
     font-size: 1.6em;
   }
 
-  .talleres-presenciales td {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.4em;
-  }
-
   .talleres-presenciales table {
-    margin: 4em 0 4em 0;
-    border-color: lightseagreen;
-    border-style: solid;
-    border-collapse: collapse;
-    empty-cells: show;
-    table-layout: fixed;
-    width: 80%;
+    width: 50%;
   }
 
   /* ----FOOTER---- */
@@ -126,17 +132,17 @@ p {
   /* ---TITULO SECCION--- */
   .titulo-seccion h2 {
     margin: 1em;
-    font-size: 3em;
+    font-size: sans-serif;
   }
 
   /* MENU NAVEGABLE NO INDEX */
   .header nav ul li a {
-    font-size: 1.7em;
+    font-size: 1.6em;
   }
 
   .header nav ul li a:hover {
     color: #b758ee;
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .header .logo a img {
@@ -147,76 +153,90 @@ p {
 
   /* index */
   .seccion-mapa div div {
-    width: 50em;
-  }
-
-  .seccion-mapa div h1 {
-    font-size: 1.3em;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    text-align: center;
+    width: 20em;
   }
 
   .hero-section p {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   /* ----TIENDA----- */
   .nuestros-destacados > div {
     width: 18em;
-    height: 30em;
+    height: 18em;
   }
 
   .nuestros-destacados h2 {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   .nuestros-destacados p {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   .novedades div img {
-    width: 18em;
+    width: 1em;
     height: 24em;
   }
 
-  .novedades h4 {
-    font-size: 2.5em;
+  .novedades h3 {
+    font-size: 1.6em;
   }
 
   /* ---CONTACTO---- */
   .form-contacto #form {
-    width: 40em;
+    width: 80%;
+  }
+
+  .form-contacto div div {
+    width: 70%;
   }
 
   .main-contacto section .datos-contacto a {
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   /* EL JARDIN */
+  .productos div {
+    height: 12em;
+  }
+
   .productos div img {
-    width: 16em;
+    width: 10em;
+    height: 10em;
+  }
+
+  .productos h2 {
+    font-size: 1.6em;
   }
 
   .productos a {
-    font-size: 1.8em;
+    font-size: 1.6em;
+  }
+
+  /*---- TALLERES--- */
+  .main-talleres .talleres div {
+    width: 18em;
+    height: 18em;
   }
 }
 /* Media queryes intermedio-(tablets) 768px */
 @media screen and (max-width: 768px) {
   /* ---TITULO SECCION--- */
   .titulo-seccion h2 {
-    font-size: 2.5em;
+    margin: 1em;
+    font-size: sans-serif;
   }
 
   /* MENU NAVEGABLE NO INDEX */
   .header nav ul li a {
-    font-size: 1.8em;
+    font-size: "Akshar";
   }
 
   .header nav ul li a:hover {
     color: #b758ee;
-    font-size: 2em;
+    font-size: sans-serif;
   }
 
   .header .logo a img {
@@ -227,8 +247,7 @@ p {
 
   /* main-contacto */
   .form-contacto input:focus {
-    width: 18em;
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   .form-contacto p {
@@ -236,7 +255,16 @@ p {
   }
 
   .form-contacto h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
+  }
+
+  /* ---CONTACTO---- */
+  .form-contacto #form {
+    width: 60%;
+  }
+
+  .form-contacto div div {
+    width: 80%;
   }
 
   /* ---INDEX ----*/
@@ -250,6 +278,11 @@ p {
 
   .header-hero nav ul li a:hover {
     font-size: 2em;
+  }
+
+  /*----MAPA INDEX-----*/
+  .seccion-mapa div div {
+    width: 15em;
   }
 
   /* EL JARDIN */
@@ -284,7 +317,7 @@ p {
 @media screen and (max-width: 576px) {
   /* EL JARDIN */
   .productos div img {
-    width: 12em;
+    width: 8em;
   }
 
   .productos a {
@@ -293,16 +326,15 @@ p {
 
   /* MENU NAVEGABLE NO INDEX */
   .header nav ul li a {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .header nav ul li a:hover {
     color: #b758ee;
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
   .header .logo a img {
-    margin: 2em 0.5em;
     width: 9em;
     height: 9em;
   }
@@ -314,7 +346,7 @@ p {
   }
 
   .nuestros-destacados h2 {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
 }
 /**--COMIENZA CLASS PRODUCTOS (el-jardin)--**/
@@ -332,10 +364,6 @@ p {
 }
 .productos div {
   height: 23em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
 }
 .productos div img {
   width: 15em;
@@ -364,18 +392,12 @@ p {
   background-color: #FEF5ED;
   bottom: 0;
 }
-.footer div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .footer div .logo img {
   margin: 1, 5em 6em;
 }
 .footer div .logo img h3 {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: bold;
   font-family: sans-serif;
   color: #FEF5ED;
@@ -402,8 +424,8 @@ p {
 }
 .footer div .contacto div img h4,
 .footer div .contacto div img h5 {
-  font-size: 1.7em;
-  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  font-family: sans-serif;
   text-align: center;
 }
 
@@ -417,20 +439,12 @@ p {
 /**-----HEADER-NO-INDEX-------**/
 header {
   grid-area: header;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: #FEF5ED;
-  flex-wrap: wrap;
 }
 header nav ul {
-  display: flex;
   list-style: none;
-  justify-content: space-around;
-  align-items: center;
   border-radius: 2em;
   margin-right: 2em;
-  flex-wrap: wrap;
 }
 header nav ul li {
   margin: 2em;
@@ -446,17 +460,19 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #404e42;
   font-size: 2.8em;
-  text-shadow: 3px 3px 3px #EFEAD8;
+  text-shadow: 3px 3px 3px #FEF5ED;
   transition: 1s;
 }
 
 /**--------HEADER/NAV  (index)--------**/
 .header-hero {
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
   grid-area: header;
   background-color: #FEF5ED;
+}
+.header-hero .logo a h1 {
+  margin: 1em;
+  text-decoration: none;
 }
 .header-hero nav {
   margin: 0.4em 0.1em 0.4em 0.1em;
@@ -466,17 +482,13 @@ header nav ul li a:hover {
 }
 .header-hero nav ul {
   margin: 1em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
 }
 .header-hero nav ul li a {
   text-decoration: none;
   font-size: 2em;
   font-weight: bold;
   font-family: "Akshar";
-  text-shadow: -3px 2px 2px #ADC2A9;
+  text-shadow: -3px 2px 3px #ADC2A9;
 }
 .header-hero nav ul li a:hover {
   color: #404e42;
@@ -492,15 +504,12 @@ main {
 /**---MAIN-TEXTO PRINCIPAL-index----**/
 .hero-section {
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)), url("../multimedia/fondo-floral-azul.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)), url("https://i.ibb.co/Y2C9XH2/fondo-floral-azul.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 .hero-section div {
   margin: 1em;
@@ -520,14 +529,10 @@ main {
 }
 
 .seccion-mapa {
-  display: flex;
   justify-content: row;
-  justify-content: space-evenly;
-  align-items: center;
   grid-area: main;
   background-color: #EFEAD8;
   margin: 3em 0;
-  flex-wrap: wrap;
 }
 .seccion-mapa iframe {
   margin: 2em;
@@ -543,10 +548,7 @@ main {
 }
 
 .main-form div {
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   background-color: #ADC2A9;
 }
 .main-form div h2,
@@ -561,7 +563,7 @@ main {
 /**-----COMIENZA MAIN-EL-JARDIN-----**/
 .main-el-jardin {
   grid-area: main;
-  background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055)), #FEF5ED;
+  background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055)), url("https://i.ibb.co/7Sfk5N7/fondo-el-jardin.jpg");
   background-size: contain;
   background-attachment: fixed;
   /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
@@ -583,10 +585,6 @@ main {
 }
 .main-el-jardin .atajos-el-jardin {
   margin: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
 }
 .main-el-jardin .atajos-el-jardin div {
   width: 20em;
@@ -620,7 +618,7 @@ main {
 
 /* COMIENZA MAIN/TALLERES */
 .main-talleres {
-  background: linear-gradient(rgba(141, 140, 140, 0.105), rgba(141, 140, 140, 0.105)), url("../multimedia/fondo-talleres.jpg");
+  background: linear-gradient(rgba(141, 140, 140, 0.105), rgba(141, 140, 140, 0.105)), url("https://i.ibb.co/ggNYPWd/fondo-talleres.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -645,16 +643,12 @@ main {
   text-shadow: -3px -2px 2px #5F7161;
 }
 .main-talleres .talleres {
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
 }
 .main-talleres .talleres div {
   margin: 3em 0;
-  width: 30em;
-  height: 30em;
+  width: 28em;
+  height: 28em;
   border-radius: 15px;
   border-color: #404e42;
   box-shadow: -4px 2px 5px -3px black;
@@ -665,68 +659,60 @@ main {
 }
 .main-talleres .talleres div a h2 {
   text-align: center;
-  font-size: 2.6em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
   color: #FEF5ED;
+  text-decoration: none;
 }
 .main-talleres .talleres div a h2:hover {
   transform: scale(1.1);
   transition: 1s;
 }
 .main-talleres .talleres div:nth-child(1) {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../multimedia/images/taller-macrame.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://i.ibb.co/MDKh9W7/taller-macrame.jpg");
   background-size: cover;
 }
 .main-talleres .talleres div:nth-child(2) {
-  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/taller-hidroponia.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/WpvTWbB/taller-hidroponia.jpg");
   background-size: cover;
 }
 .main-talleres .talleres div:nth-child(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/taller-huerta.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/hWk2k0p/taller-huerta.jpg");
   background-size: cover;
 }
 .main-talleres .videos-talleres {
   margin: 0.5em;
   height: 50em;
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 .main-talleres .videos-talleres p {
-  width: 50%;
-  height: 25%;
+  width: 60%;
+  height: 30%;
   margin: 1em;
-  padding: 1em;
+  padding: 0.5em;
   background-color: #99A799;
-  font-size: 2.4em;
-  color: #EFEAD8;
+  font-size: 2.5em;
+  color: #EAEDEF;
   font-weight: bolt;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Dosis";
   border-radius: 15px;
   text-align: center;
 }
 .main-talleres .talleres-presenciales {
   margin-bottom: 4em;
-  font-family: sans-serif;
-  flex-wrap: wrap;
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "Dosis";
   /* TABLA CRONOGRAMA TALLERES PRESENCIALES */
 }
 .main-talleres .talleres-presenciales h2 {
   font-family: sans-serif;
-  font-size: 3em;
+  font-size: 1.6em;
 }
 .main-talleres .talleres-presenciales th {
-  font-size: 2em;
+  font-size: 1.4em;
 }
 .main-talleres .talleres-presenciales td {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 .main-talleres .talleres-presenciales table {
   margin: 4em 0 4em 0;
@@ -735,20 +721,19 @@ main {
   border-collapse: collapse;
   empty-cells: show;
   table-layout: fixed;
-  width: 60%;
-  background: #FEF5ED;
+  width: 70%;
+  background: #EAEDEF;
 }
 
 /* COMIENZA MAIN/TIENDA */
 .main-tienda {
-  background: linear-gradient(rgba(208, 207, 207, 0.467), rgba(208, 207, 207, 0.467)), url("../multimedia/fondo-flores-en-frascos.jpg");
+  background: linear-gradient(rgba(208, 207, 207, 0.467), rgba(208, 207, 207, 0.467)), url("https://i.ibb.co/NWQtCMY/fondo-flores-en-frascos.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
   /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
   /* COMIENZA SECCION "NUESTROS DESTACADOS"(tienda.html) */
-  /* COMIENZA SECCION NOVEDADES (tienda.html) */
 }
 .main-tienda .titulo-seccion {
   /* display: flex; */
@@ -765,84 +750,83 @@ main {
   text-shadow: -3px -2px 2px #5F7161;
 }
 .main-tienda .nuestros-destacados {
-  margin: 0.8em;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  margin: 2em;
+  padding: 1em;
+  flex-direction: column;
 }
 .main-tienda .nuestros-destacados h2 {
-  color: rgba(247, 233, 215, 0.919);
-  font-size: 3em;
+  color: #EFEAD8;
+  font-size: 2.8em;
   font-weight: bolt;
-  font-family: "Nunito", sans-serif;
-  text-shadow: -2px 2px 2px #22445f;
+  font-family: 1.6em;
+  text-shadow: -2px 2px 2px #404e42;
   text-align: center;
   background-repeat: no-repeat;
 }
-.main-tienda .nuestros-destacados > div {
-  /* margin: 20px 0 20px 0; */
-  width: 33em;
-  height: 42em;
+.main-tienda .nuestros-destacados > div img {
+  width: 30em;
+  height: 25em;
+  flex-direction: column;
+}
+.main-tienda .nuestros-destacados > div img p {
+  color: #FEF5ED;
+  font-size: 2.5em;
+  font-family: sans-serif;
+  text-shadow: -2px 2px 2px #ADC2A9;
+  height: 15em;
   border-radius: 1, 5em;
   box-shadow: 0 0 0.5em -0.2em black;
   padding: 1em;
 }
-.main-tienda .nuestros-destacados > div p {
-  color: #eaedef;
-  font-size: 2.4em;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-shadow: -2px 2px 2px #113539;
-}
-.main-tienda .nuestros-destacados > div:nth-child(2) {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../multimedia/images/regalos-unicos.jpg");
+.main-tienda .nuestros-destacados > div img:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://i.ibb.co/Sczzn4T/regalos-unicos.jpg");
   background-size: cover;
 }
-.main-tienda .nuestros-destacados > div:nth-child(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/suscripciones-mensuales.jpeg");
+.main-tienda .nuestros-destacados > div img:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/fCZj39d/suscripciones-mensuales.jpg");
   background-size: cover;
 }
-.main-tienda .nuestros-destacados > div:nth-child(4) {
-  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("../multimedia/images/productos-naturales.jpg");
+.main-tienda .nuestros-destacados > div img:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/dGFcct2/productos-naturales.jpg");
   background-size: cover;
 }
-.main-tienda .novedades {
+
+/* COMIENZA SECCION NOVEDADES (tienda.html) */
+.novedades {
   margin: 2em;
   padding: 1em;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
-.main-tienda .novedades div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.main-tienda .novedades div img {
+.novedades div img {
   margin: 1em;
-  width: 25em;
-  height: 30em;
+  width: 18em;
+  height: 20em;
   border-radius: 1.5em;
   transition: 1s;
 }
-.main-tienda .novedades div img :hover {
+.novedades div img :hover {
   transform: scale(1.1);
+}
+.novedades div h3 {
+  margin: 1em;
+  color: #EAEDEF;
+  font-size: 2.8em;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: -3px 3px 3px #ADC2A9;
 }
 
 /**----comienza MAIN pages/CONTACTO-----**/
 .main-contacto {
-  background: linear-gradient(rgba(0, 0, 0, 0.318), rgba(0, 0, 0, 0.318)), url("../multimedia/fondo-contacto.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.318), rgba(0, 0, 0, 0.318)), url("https://i.ibb.co/ZxDJFfg/fondo-contacto.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   grid-area: main;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em;
+  padding: 1em;
   /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
   /**-- SECCION CON INFORMACION DE CONTACTO EN MAIN-CONTACTO--**/
 }
@@ -861,11 +845,7 @@ main {
   text-shadow: -3px -2px 2px #5F7161;
 }
 .main-contacto div {
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
 }
 .main-contacto .form-contacto div {
   width: 90%;
@@ -875,53 +855,52 @@ main {
   align-items: center;
   background-color: rgba(159, 159, 159, 0.413);
 }
-.main-contacto .form-contacto div div div {
+.main-contacto .form-contacto div div {
+  width: 60%;
+  display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
 }
 .main-contacto .form-contacto div input:focus {
   width: 1em;
-  font-size: 2.2em;
+  font-size: 2em;
 }
 .main-contacto .form-contacto div p {
   text-align: center;
   color: rgba(246, 244, 241, 0.7960784314);
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bolt;
-  font-family: "Nunito", sans-serif;
-  text-shadow: -2px 1px 3px rgba(8, 51, 42, 0.737254902);
+  font-family: "Akshar";
+  text-shadow: -2px 1px 3px #404e42;
 }
 .main-contacto .form-contacto div h2 {
   margin-bottom: 5px;
   text-align: center;
-  color: rgba(247, 233, 215, 0.7960784314);
-  font-size: 2em;
+  color: #EFEAD8;
+  font-size: 1.6em;
   font-weight: bolt;
-  font-family: "Nunito", sans-serif;
-  text-shadow: -2px 2px 2px rgba(148, 213, 243, 0.737254902);
+  font-family: "Dosis";
+  text-shadow: -2px 2px 2px #ADC2A9;
 }
 .main-contacto .datos-contacto {
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   text-decoration: none;
 }
 .main-contacto .datos-contacto h3 {
   text-decoration: none;
   font-size: 1.6em;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(243, 230, 206);
-  text-shadow: -1px 2px 2px rgba(21, 65, 70, 0.6901960784);
+  font-family: "Dosis";
+  color: #EFEAD8;
+  text-shadow: -1px 2px 2px #5F7161;
 }
 .main-contacto .datos-contacto a {
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: "Akshar";
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(243, 230, 206);
+  font-family: "Dosis";
+  color: #EFEAD8;
 }
 
 body {
