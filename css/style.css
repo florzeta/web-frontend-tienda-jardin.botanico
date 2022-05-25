@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-.main-contacto .datos-contacto, .main-contacto div, .novedades div, .novedades, .main-tienda .nuestros-destacados > div img, .main-tienda .nuestros-destacados, .main-talleres .talleres-presenciales, .main-talleres .videos-talleres, .main-talleres .talleres, .main-el-jardin .atajos-el-jardin, .main-form div, .seccion-mapa, .hero-section, .header-hero nav ul, .header-hero, header nav ul, header, .footer div, .productos div {
+.main-contacto .datos-contacto, .main-contacto div, .main-tienda .novedades div, .main-tienda .novedades, .main-tienda .nuestros-destacados div, .main-tienda .nuestros-destacados, .main-talleres .talleres-presenciales, .main-talleres .videos-talleres, .main-talleres .talleres, .main-el-jardin .atajos-el-jardin, .main-form div, .seccion-mapa, .hero-section, .header-hero nav ul, .header-hero, header nav ul, header, .footer div, .productos div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -734,6 +734,7 @@ main {
   width: 100%;
   /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
   /* COMIENZA SECCION "NUESTROS DESTACADOS"(tienda.html) */
+  /* COMIENZA SECCION NOVEDADES (tienda.html) */
 }
 .main-tienda .titulo-seccion {
   /* display: flex; */
@@ -763,12 +764,15 @@ main {
   text-align: center;
   background-repeat: no-repeat;
 }
-.main-tienda .nuestros-destacados > div img {
-  width: 30em;
-  height: 25em;
+.main-tienda .nuestros-destacados div {
+  margin: 1em;
+}
+.main-tienda .nuestros-destacados div img {
+  width: 15em;
+  height: 15em;
   flex-direction: column;
 }
-.main-tienda .nuestros-destacados > div img p {
+.main-tienda .nuestros-destacados div p {
   color: #FEF5ED;
   font-size: 2.5em;
   font-family: sans-serif;
@@ -778,36 +782,34 @@ main {
   box-shadow: 0 0 0.5em -0.2em black;
   padding: 1em;
 }
-.main-tienda .nuestros-destacados > div img:nth-child(2) {
+.main-tienda .nuestros-destacados div:nth-child(2) {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://i.ibb.co/Sczzn4T/regalos-unicos.jpg");
   background-size: cover;
 }
-.main-tienda .nuestros-destacados > div img:nth-child(3) {
+.main-tienda .nuestros-destacados div:nth-child(3) {
   background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/fCZj39d/suscripciones-mensuales.jpg");
   background-size: cover;
 }
-.main-tienda .nuestros-destacados > div img:nth-child(4) {
+.main-tienda .nuestros-destacados div:nth-child(4) {
   background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/dGFcct2/productos-naturales.jpg");
   background-size: cover;
 }
-
-/* COMIENZA SECCION NOVEDADES (tienda.html) */
-.novedades {
+.main-tienda .novedades {
   margin: 2em;
   padding: 1em;
   flex-direction: column;
 }
-.novedades div img {
+.main-tienda .novedades div img {
   margin: 1em;
   width: 18em;
   height: 20em;
   border-radius: 1.5em;
   transition: 1s;
 }
-.novedades div img :hover {
+.main-tienda .novedades div img :hover {
   transform: scale(1.1);
 }
-.novedades div h3 {
+.main-tienda .novedades div h3 {
   margin: 1em;
   color: #EAEDEF;
   font-size: 2.8em;

@@ -335,12 +335,15 @@ main {
             text-align: center;
             background-repeat: no-repeat;
         }
-
-        >div img{
-            width: 30em;
-            height: 25em;
+            div{
+                margin: 1em;
+                @extend %flex;
+            
+        img{
+            width: 15em;
+            height: 15em;
             flex-direction: column;
-            @extend %flex;
+        }
 
             p {
                 color: $color-claro;
@@ -371,12 +374,12 @@ main {
                 background-size: cover;
 
             }
-
-
         }
 
+        
+
     }
-}
+
 
 /* COMIENZA SECCION NOVEDADES (tienda.html) */
 .novedades {
@@ -413,7 +416,7 @@ main {
     }
 
 }
-
+}
 
 
 /**----comienza MAIN pages/CONTACTO-----**/
@@ -516,4 +519,5 @@ main {
 
         }
     }
+    
 }
