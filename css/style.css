@@ -107,7 +107,7 @@
   }
 
   /* EL JARDIN */
-  .productos div img {
+  .productos img {
     width: 20em;
     height: 25em;
   }
@@ -117,7 +117,7 @@
   }
 }
 /* Media Queryes para Desktop - 992px */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 950px) {
   /* MAIN */
   .main-form h2,
 p {
@@ -199,12 +199,12 @@ p {
 
   /* EL JARDIN */
   .productos div {
-    height: 12em;
+    height: 55em;
   }
 
-  .productos div img {
-    width: 10em;
-    height: 10em;
+  .productos img {
+    width: 4em;
+    height: 4em;
   }
 
   .productos h2 {
@@ -312,12 +312,34 @@ p {
     width: 70%;
     height: 25%;
   }
+
+  /* EL JARDIN */
+  .productos div {
+    height: 63em;
+  }
+
+  .productos img {
+    width: 3em;
+    height: 3em;
+  }
+
+  .productos h2 {
+    font-size: 1.6em;
+  }
+
+  .productos a {
+    font-size: 1.6em;
+  }
 }
 /* Media Queryes para telefonos */
 @media screen and (max-width: 576px) {
   /* EL JARDIN */
-  .productos div img {
-    width: 8em;
+  .productos div {
+    height: 60em;
+  }
+
+  .productos h2 {
+    font-size: 1.4em;
   }
 
   .productos a {
@@ -594,6 +616,7 @@ main {
   padding: 1em;
   border-radius: 1.5em;
   text-align: center;
+  flex-wrap: wrap;
 }
 .main-el-jardin .atajos-el-jardin div a {
   text-decoration: none;
@@ -858,7 +881,7 @@ main {
   background-color: rgba(159, 159, 159, 0.413);
 }
 .main-contacto .form-contacto div div {
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -866,12 +889,12 @@ main {
 }
 .main-contacto .form-contacto div input:focus {
   width: 1em;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .main-contacto .form-contacto div p {
   text-align: center;
   color: rgba(246, 244, 241, 0.7960784314);
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bolt;
   font-family: "Akshar";
   text-shadow: -2px 1px 3px #404e42;

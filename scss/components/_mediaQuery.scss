@@ -57,6 +57,7 @@
         width: 24em;
         height: 24em;
     }
+
     .main-talleres .videos-talleres p {
         margin: 0.5em;
         width: 90%;
@@ -78,7 +79,7 @@
     }
 
     /* EL JARDIN */
-    .productos div img {
+    .productos img {
         width: 20em;
         height: 25em;
     }
@@ -91,7 +92,7 @@
 
 
 /* Media Queryes para Desktop - 992px */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 950px) {
 
     /* MAIN */
     .main-form h2,
@@ -179,12 +180,13 @@
 
     /* EL JARDIN */
     .productos div {
-        height: 12em;
+        height: 55em;
+
     }
 
-    .productos div img {
-        width: 10em;
-        height: 10em;
+    .productos img {
+        width: 4em;
+        height: 4em;
     }
 
     .productos h2 {
@@ -194,6 +196,7 @@
     .productos a {
         font-size: nth($list: $font-size, $n: 2);
     }
+
     /*---- TALLERES--- */
     .main-talleres .talleres div {
         width: 18em;
@@ -301,14 +304,38 @@
         width: 70%;
         height: 25%;
     }
+
+    /* EL JARDIN */
+    .productos div {
+        height: 63em;
+
+    }
+
+    .productos img {
+        width: 3em;
+        height: 3em;
+    }
+
+    .productos h2 {
+        font-size: nth($list: $font-size, $n: 2);
+    }
+
+    .productos a {
+        font-size: nth($list: $font-size, $n: 2);
+    }
 }
 
 /* Media Queryes para telefonos */
 @media screen and (max-width: 576px) {
 
     /* EL JARDIN */
-    .productos div img {
-        width: 8em;
+    .productos div {
+        height: 60em;
+
+    }
+
+    .productos h2 {
+        font-size: nth($list: $font-size, $n: 1);
     }
 
     .productos a {

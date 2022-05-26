@@ -121,6 +121,7 @@ main {
             padding: 1em;
             border-radius: 1.5em;
             text-align: center;
+            flex-wrap: wrap;
 
             a {
                 text-decoration: none;
@@ -200,6 +201,7 @@ main {
                     font-weight: bold;
                     color: $color-claro;
                     text-decoration: none;
+
                     &:hover {
                         transform: scale(1.1);
                         transition: 1s;
@@ -335,15 +337,16 @@ main {
             text-align: center;
             background-repeat: no-repeat;
         }
-            div{
-                margin: 1em;
-                @extend %flex;
-            
-        img{
-            width: 15em;
-            height: 15em;
-            flex-direction: column;
-        }
+
+        div {
+            margin: 1em;
+            @extend %flex;
+
+            img {
+                width: 15em;
+                height: 15em;
+                flex-direction: column;
+            }
 
             p {
                 color: $color-claro;
@@ -376,46 +379,46 @@ main {
             }
         }
 
-        
+
 
     }
 
 
-/* COMIENZA SECCION NOVEDADES (tienda.html) */
-.novedades {
-    margin: 2em;
-    padding: 1em;
-    flex-direction: column;
-    @extend %flex;
-
-    div {
+    /* COMIENZA SECCION NOVEDADES (tienda.html) */
+    .novedades {
+        margin: 2em;
+        padding: 1em;
+        flex-direction: column;
         @extend %flex;
 
-        img {
-            margin: 1em;
-            width: 18em;
-            height: 20em;
-            border-radius: 1.5em;
-            transition: 1s;
+        div {
+            @extend %flex;
 
-            :hover {
-                transform: scale(1.1);
+            img {
+                margin: 1em;
+                width: 18em;
+                height: 20em;
+                border-radius: 1.5em;
+                transition: 1s;
 
+                :hover {
+                    transform: scale(1.1);
+
+                }
+            }
+
+            h3 {
+                margin: 1em;
+                color: $color-muy-claro;
+                font-size: nth($list: $font-size, $n: 6);
+                font-family: nth($list: $font-family, $n: 2);
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: -3px 3px 3px $color-tres;
             }
         }
 
-        h3 {
-            margin: 1em;
-            color: $color-muy-claro;
-            font-size: nth($list: $font-size, $n: 6);
-            font-family: nth($list: $font-family, $n: 2);
-            text-align: center;
-            text-transform: uppercase;
-            text-shadow: -3px 3px 3px $color-tres;
-        }
     }
-
-}
 }
 
 
@@ -462,7 +465,7 @@ main {
         background-color: rgba(159, 159, 159, 0.413);
 
         div {
-            width: 60%;
+            width: 70%;
             display: flex;
             flex-direction: row;
             text-align: center;
@@ -471,13 +474,13 @@ main {
 
         input:focus {
             width: 1em;
-            font-size: nth($list: $font-size, $n: 4);
+            font-size: nth($list: $font-size, $n: 3);
         }
 
         p {
             text-align: center;
             color: #f6f4f1cb;
-            font-size: nth($list: $font-size, $n: 5);
+            font-size: nth($list: $font-size, $n: 4);
             font-weight: bolt;
             font-family: nth($list: $font-family, $n: 1);
             text-shadow: -2px 1px 3px $color-muy-oscuro;
@@ -519,5 +522,5 @@ main {
 
         }
     }
-    
+
 }
