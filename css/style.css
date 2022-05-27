@@ -29,9 +29,7 @@
     width: 100%;
   }
 }
-/*lista de los font-size de mi proyecto*/
 /*11*/
-/*lista de los font-family de mi proyecto*/
 /* --------MEDIA QUERIES-------- */
 /* media queries para desktop grande- 1200px */
 @media screen and (max-width: 1200px) {
@@ -592,7 +590,6 @@ main {
   /**---comienza atajos-el-jardin---**/
 }
 .main-el-jardin .titulo-seccion {
-  /* display: flex; */
   text-align: center;
   align-items: center;
 }
@@ -652,7 +649,6 @@ main {
   /* COMIENZA SECCION TALLERES PRESENCIALES + TABLA DE CRONOGRAMA */
 }
 .main-talleres .titulo-seccion {
-  /* display: flex; */
   text-align: center;
   align-items: center;
 }
@@ -760,7 +756,6 @@ main {
   /* COMIENZA SECCION NOVEDADES (tienda.html) */
 }
 .main-tienda .titulo-seccion {
-  /* display: flex; */
   text-align: center;
   align-items: center;
 }
@@ -856,7 +851,6 @@ main {
   /**-- SECCION CON INFORMACION DE CONTACTO EN MAIN-CONTACTO--**/
 }
 .main-contacto .titulo-seccion {
-  /* display: flex; */
   text-align: center;
   align-items: center;
 }
