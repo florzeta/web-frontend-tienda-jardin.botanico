@@ -29,11 +29,6 @@
 
     /* ----TIENDA----- */
 
-    .nuestros-destacados>div {
-        width: 20em;
-        height: 20em;
-    }
-
     .nuestros-destacados h2 {
 
         font-size: nth($list: $font-size, $n: 4);
@@ -53,15 +48,10 @@
     }
 
     /*---- TALLERES--- */
-    .main-talleres .talleres div {
-        width: 24em;
-        height: 24em;
-    }
+    
 
     .main-talleres .videos-talleres p {
-        margin: 0.5em;
-        width: 90%;
-        height: 40%;
+    
         font-size: nth($list: $font-size, $n: 2);
     }
 
@@ -141,10 +131,7 @@
 
     /* ----TIENDA----- */
 
-    .nuestros-destacados>div {
-        width: 18em;
-        height: 18em;
-    }
+  
 
     .nuestros-destacados h2 {
         font-size: nth($list: $font-size, $n: 2);
@@ -152,11 +139,6 @@
 
     .nuestros-destacados p {
         font-size: nth($list: $font-size, $n: 2);
-    }
-
-    .novedades div img {
-        width: 1em;
-        height: 24em;
     }
 
     .novedades h3 {
@@ -179,14 +161,10 @@
     }
 
     /* EL JARDIN */
-    .productos div {
-        height: 55em;
-
-    }
-
+    
     .productos img {
         width: 4em;
-        height: 4em;
+        
     }
 
     .productos h2 {
@@ -197,11 +175,7 @@
         font-size: nth($list: $font-size, $n: 2);
     }
 
-    /*---- TALLERES--- */
-    .main-talleres .talleres div {
-        width: 18em;
-        height: 18em;
-    }
+    
 }
 
 /* Media queryes intermedio-(tablets) 768px */
@@ -289,31 +263,20 @@
     }
 
     /* ---TALLERES--- */
-    .talleres div {
-        width: 30em;
-        height: 30em;
-    }
-
+    
 
     .talleres div a h2 {
         text-align: center;
         font-size: 2em;
     }
 
-    .videos-talleres p {
-        width: 70%;
-        height: 25%;
-    }
+
 
     /* EL JARDIN */
-    .productos div {
-        height: 63em;
-
-    }
+    
 
     .productos img {
         width: 3em;
-        height: 3em;
     }
 
     .productos h2 {
@@ -329,11 +292,7 @@
 @media screen and (max-width: 576px) {
 
     /* EL JARDIN */
-    .productos div {
-        height: 60em;
-
-    }
-
+    
     .productos h2 {
         font-size: nth($list: $font-size, $n: 1);
     }
@@ -356,15 +315,9 @@
 
     .header .logo a img {
         width: 9em;
-        height: 9em;
     }
 
     /* ----TIENDA----- */
-
-    .nuestros-destacados>div {
-        width: 15em;
-        height: 28em;
-    }
 
     .nuestros-destacados h2 {
         font-size: nth($list: $font-size, $n: 1);

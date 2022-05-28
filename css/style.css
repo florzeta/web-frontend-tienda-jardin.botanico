@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-.main-contacto .datos-contacto, .main-contacto div, .main-tienda .novedades div, .main-tienda .novedades, .main-tienda .nuestros-destacados div, .main-tienda .nuestros-destacados, .main-talleres .talleres-presenciales, .main-talleres .videos-talleres, .main-talleres .talleres, .main-el-jardin .atajos-el-jardin, .main-form div, .seccion-mapa, .hero-section, .header-hero nav ul, .header-hero, header nav ul, header, .footer div, .productos div {
+.main-contacto .datos-contacto, .main-contacto div, .main-tienda .novedades div, .main-tienda .novedades, .main-talleres .talleres-presenciales, .main-talleres .talleres, .main-el-jardin .atajos-el-jardin, .main-form div, .seccion-mapa, .hero-section, .header-hero nav ul, .header-hero, header nav ul, header, .footer div, .productos div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -56,11 +56,6 @@
   }
 
   /* ----TIENDA----- */
-  .nuestros-destacados > div {
-    width: 20em;
-    height: 20em;
-  }
-
   .nuestros-destacados h2 {
     font-size: 2em;
   }
@@ -79,15 +74,7 @@
   }
 
   /*---- TALLERES--- */
-  .main-talleres .talleres div {
-    width: 24em;
-    height: 24em;
-  }
-
   .main-talleres .videos-talleres p {
-    margin: 0.5em;
-    width: 90%;
-    height: 40%;
     font-size: 1.6em;
   }
 
@@ -159,22 +146,12 @@ p {
   }
 
   /* ----TIENDA----- */
-  .nuestros-destacados > div {
-    width: 18em;
-    height: 18em;
-  }
-
   .nuestros-destacados h2 {
     font-size: 1.6em;
   }
 
   .nuestros-destacados p {
     font-size: 1.6em;
-  }
-
-  .novedades div img {
-    width: 1em;
-    height: 24em;
   }
 
   .novedades h3 {
@@ -196,13 +173,8 @@ p {
   }
 
   /* EL JARDIN */
-  .productos div {
-    height: 55em;
-  }
-
   .productos img {
     width: 4em;
-    height: 4em;
   }
 
   .productos h2 {
@@ -211,12 +183,6 @@ p {
 
   .productos a {
     font-size: 1.6em;
-  }
-
-  /*---- TALLERES--- */
-  .main-talleres .talleres div {
-    width: 18em;
-    height: 18em;
   }
 }
 /* Media queryes intermedio-(tablets) 768px */
@@ -296,29 +262,14 @@ p {
   }
 
   /* ---TALLERES--- */
-  .talleres div {
-    width: 30em;
-    height: 30em;
-  }
-
   .talleres div a h2 {
     text-align: center;
     font-size: 2em;
   }
 
-  .videos-talleres p {
-    width: 70%;
-    height: 25%;
-  }
-
   /* EL JARDIN */
-  .productos div {
-    height: 63em;
-  }
-
   .productos img {
     width: 3em;
-    height: 3em;
   }
 
   .productos h2 {
@@ -332,10 +283,6 @@ p {
 /* Media Queryes para telefonos */
 @media screen and (max-width: 576px) {
   /* EL JARDIN */
-  .productos div {
-    height: 60em;
-  }
-
   .productos h2 {
     font-size: 1.4em;
   }
@@ -356,15 +303,9 @@ p {
 
   .header .logo a img {
     width: 9em;
-    height: 9em;
   }
 
   /* ----TIENDA----- */
-  .nuestros-destacados > div {
-    width: 15em;
-    height: 28em;
-  }
-
   .nuestros-destacados h2 {
     font-size: 1.4em;
   }
@@ -381,9 +322,6 @@ p {
   font-family: sans-serif;
   color: black;
   text-shadow: -2px 2px 3px #ADC2A9;
-}
-.productos div {
-  height: 23em;
 }
 .productos div img {
   width: 15em;
@@ -454,6 +392,12 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "header header" "main main" "footer footer";
+}
+
+.grid-container-cards {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 2.5em;
 }
 
 /**-----HEADER-NO-INDEX-------**/
@@ -700,14 +644,10 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/hWk2k0p/taller-huerta.jpg");
   background-size: cover;
 }
-.main-talleres .videos-talleres {
+.main-talleres .videos-talleres div div {
   margin: 0.5em;
-  height: 50em;
-  flex-direction: column;
 }
-.main-talleres .videos-talleres p {
-  width: 60%;
-  height: 30%;
+.main-talleres .videos-talleres div div p {
   margin: 1em;
   padding: 0.5em;
   background-color: #99A799;
@@ -771,7 +711,6 @@ main {
 .main-tienda .nuestros-destacados {
   margin: 2em;
   padding: 1em;
-  flex-direction: column;
 }
 .main-tienda .nuestros-destacados h2 {
   color: #EFEAD8;
@@ -782,40 +721,38 @@ main {
   text-align: center;
   background-repeat: no-repeat;
 }
-.main-tienda .nuestros-destacados div {
-  margin: 1em;
+.main-tienda .nuestros-destacados .nuestros-destacados div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.main-tienda .nuestros-destacados div img {
-  width: 15em;
-  height: 15em;
-  flex-direction: column;
+.main-tienda .nuestros-destacados .nuestros-destacados div nues .card img {
+  width: 100%;
+  height: 18em;
 }
-.main-tienda .nuestros-destacados div p {
-  color: #FEF5ED;
-  font-size: 2.5em;
+.main-tienda .nuestros-destacados .nuestros-destacados div .card-title h2 {
+  color: #5F7161;
+  font-size: 1.8em;
   font-family: sans-serif;
   text-shadow: -2px 2px 2px #ADC2A9;
-  height: 15em;
   border-radius: 1, 5em;
   box-shadow: 0 0 0.5em -0.2em black;
-  padding: 1em;
-}
-.main-tienda .nuestros-destacados div:nth-child(2) {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://i.ibb.co/Sczzn4T/regalos-unicos.jpg");
-  background-size: cover;
-}
-.main-tienda .nuestros-destacados div:nth-child(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/fCZj39d/suscripciones-mensuales.jpg");
-  background-size: cover;
-}
-.main-tienda .nuestros-destacados div:nth-child(4) {
-  background: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0, 0, 0, 0.225)), url("https://i.ibb.co/dGFcct2/productos-naturales.jpg");
-  background-size: cover;
+  margin: 2em;
 }
 .main-tienda .novedades {
   margin: 2em;
   padding: 1em;
   flex-direction: column;
+}
+.main-tienda .novedades h2 {
+  margin: 1em;
+  color: #EFEAD8;
+  font-size: 2.8em;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: -3px 3px 3px #5F7161;
 }
 .main-tienda .novedades div img {
   margin: 1em;
@@ -826,15 +763,6 @@ main {
 }
 .main-tienda .novedades div img :hover {
   transform: scale(1.1);
-}
-.main-tienda .novedades div h3 {
-  margin: 1em;
-  color: #EAEDEF;
-  font-size: 2.8em;
-  font-family: sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: -3px 3px 3px #ADC2A9;
 }
 
 /**----comienza MAIN pages/CONTACTO-----**/
