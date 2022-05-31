@@ -272,12 +272,10 @@
     /* ---CONTACTO---- */
 
     .form-contacto #form {
-        width: 60%;
+        width: 70%;
     }
 
-    .form-contacto div div {
-        width: 20%;
-    }
+   
 
 
     /* EL JARDIN */
@@ -326,7 +324,7 @@
 
     .hero-section div {
         margin: 0.8em;
-        width: 80%;
+        width: 85%;
     }
 
     .header-hero nav ul li a {
@@ -341,16 +339,16 @@
     /*----MAPA INDEX-----*/
 
     .seccion-mapa iframe {
-        margin: 1em;
+        margin: 0.2em;
 
     }
-
+ 
     .seccion-mapa iframe div div {
-        width: 20em;
+        width: 10em;
     }
 
     .seccion-mapa iframe div p {
-        font-size: 0.5em;
+        font-size: 0.1em;
 
     }
 }
@@ -360,13 +358,13 @@
 
     /* ---INDEX ----*/
     .hero-section h1 {
-        font-size: 0.5em;
+        font-size: 0.1em;
     }
 
     .hero-section div {
-        margin: 0.5em;
-        width: 85%;
-    }
+        margin: 0.3em;
+        width: 95%;
+     }
 
     .header-hero nav ul li a {
         font-size: nth($list: $font-size, $n: 1);
@@ -376,9 +374,14 @@
     .header-hero nav ul li a:hover {
         font-size: nth($list: $font-size, $n: 2);
     }
+ /* ---CONTACTO---- */
+
+ .form-contacto #form {
+    width: 90%;
+}
 
 
-    /* EL JARDIN */
+
 /* EL JARDIN */
 .atajos-el-jardin {
     margin: 0.2em;
