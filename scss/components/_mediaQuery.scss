@@ -1,11 +1,9 @@
-/* --------MEDIA QUERIES-------- */
-
 /* media queries para desktop grande- 1200px */
 @media screen and (max-width: 1200px) {
 
     /* ---INDEX ----*/
     .hero-section h1 {
-        font-size: nth($list: $font-size, $n: 3);
+        font-size: nth($list: $font-size, $n: 1);
     }
 
     .header-hero nav ul li a {
@@ -18,7 +16,13 @@
     }
 
     /*----MAPA INDEX-----*/
-    .seccion-mapa div div {
+
+    .seccion-mapa iframe {
+        margin: 1.5em;
+
+    }
+
+    .seccion-mapa iframe div div {
         width: 30em;
     }
 
@@ -28,6 +32,9 @@
     }
 
     /* ----TIENDA----- */
+    .nuestros-destacados {
+        padding: 0;
+    }
 
     .nuestros-destacados h2 {
 
@@ -48,10 +55,10 @@
     }
 
     /*---- TALLERES--- */
-    
+
 
     .main-talleres .videos-talleres p {
-    
+
         font-size: nth($list: $font-size, $n: 2);
     }
 
@@ -69,10 +76,15 @@
     }
 
     /* EL JARDIN */
+    
     .productos img {
-        width: 20em;
-        height: 25em;
+        width: 12em;
+        
     }
+        img :hover {
+            transform: scale(1);
+        }
+    
 
     .productos a {
         font-size: 2em;
@@ -81,7 +93,7 @@
 }
 
 
-/* Media Queryes para Desktop - 992px */
+/* Media Queryes para Desktop - 950px */
 @media screen and (max-width: 950px) {
 
     /* MAIN */
@@ -119,19 +131,46 @@
         height: 12em;
     }
 
-    /* index */
-    .seccion-mapa div div {
+    /* ---INDEX ----*/
+.hero-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)), url("https://i.ibb.co/rwSFkGL/fondo-floral-azul-2.png") !important;
+    background-repeat: no-repeat;
+}
+    .hero-section h1 {
+        font-size: 1em;
+    }
+
+    .hero-section div {
+        margin: 0.6em;
+        width: 75%;
+    }
+
+    .header-hero nav ul li a {
+        font-size: nth($list: $font-size, $n: 2);
+
+    }
+
+    .header-hero nav ul li a:hover {
+        font-size: nth($list: $font-size, $n: 3);
+    }
+
+    /*----MAPA INDEX-----*/
+
+    .seccion-mapa iframe {
+        margin: 1.2em;
+
+    }
+
+    .seccion-mapa iframe div div {
         width: 20em;
     }
 
-    .hero-section p {
-        font-size: nth($list: $font-size, $n: 2);
+    .seccion-mapa div p {
+        font-size: nth($list: $font-size, $n: 1);
+
     }
 
-
     /* ----TIENDA----- */
-
-  
 
     .nuestros-destacados h2 {
         font-size: nth($list: $font-size, $n: 2);
@@ -161,11 +200,21 @@
     }
 
     /* EL JARDIN */
-    
-    .productos img {
-        width: 4em;
-        
+    .atajos-el-jardin div {
+        width: 8em;
+
+
     }
+
+    .productos img {
+        width: 10em;
+        }
+
+        img :hover {
+                transform: scale(0.8);
+            }
+
+    
 
     .productos h2 {
         font-size: nth($list: $font-size, $n: 2);
@@ -175,7 +224,7 @@
         font-size: nth($list: $font-size, $n: 2);
     }
 
-    
+
 }
 
 /* Media queryes intermedio-(tablets) 768px */
@@ -227,56 +276,42 @@
     }
 
     .form-contacto div div {
-        width: 80%;
+        width: 20%;
     }
 
-    /* ---INDEX ----*/
-    .header-hero p {
-        font-size: 2.8em;
-    }
-
-    .header-hero nav ul li a {
-        font-size: 1.8em;
-
-    }
-
-    .header-hero nav ul li a:hover {
-        font-size: 2em;
-    }
-
-    /*----MAPA INDEX-----*/
-    .seccion-mapa div div {
-        width: 15em;
-    }
 
     /* EL JARDIN */
+    .atajos-el-jardin {
+        margin: 0.4em;
+        flex-direction: row;
+    }
     .atajos-el-jardin div {
-        width: 18em;
-        height: 20em;
+        width: 3em;
+
 
     }
 
-    .atajos-el-jardin div a img {
-        margin: 1em;
-        width: 9em;
-        height: 9em;
+    .atajos-el-jardin div img {
+        margin: 1em 0.6em;
+        width: 2em;
+        height: 2em;
+
     }
 
     /* ---TALLERES--- */
-    
+
 
     .talleres div a h2 {
         text-align: center;
         font-size: 2em;
     }
 
-
-
     /* EL JARDIN */
-    
 
-    .productos img {
-        width: 3em;
+
+    .productos div img {
+        width: 1.8em;
+        margin: 1em;
     }
 
     .productos h2 {
@@ -286,13 +321,79 @@
     .productos a {
         font-size: nth($list: $font-size, $n: 2);
     }
+
+    /* ---INDEX ----*/
+
+    .hero-section div {
+        margin: 0.8em;
+        width: 80%;
+    }
+
+    .header-hero nav ul li a {
+        font-size: nth($list: $font-size, $n: 2);
+
+    }
+
+    .header-hero nav ul li a:hover {
+        font-size: nth($list: $font-size, $n: 3);
+    }
+
+    /*----MAPA INDEX-----*/
+
+    .seccion-mapa iframe {
+        margin: 1em;
+
+    }
+
+    .seccion-mapa iframe div div {
+        width: 20em;
+    }
+
+    .seccion-mapa iframe div p {
+        font-size: 0.5em;
+
+    }
 }
 
 /* Media Queryes para telefonos */
 @media screen and (max-width: 576px) {
 
+    /* ---INDEX ----*/
+    .hero-section h1 {
+        font-size: 0.5em;
+    }
+
+    .hero-section div {
+        margin: 0.5em;
+        width: 85%;
+    }
+
+    .header-hero nav ul li a {
+        font-size: nth($list: $font-size, $n: 1);
+
+    }
+
+    .header-hero nav ul li a:hover {
+        font-size: nth($list: $font-size, $n: 2);
+    }
+
+
     /* EL JARDIN */
-    
+/* EL JARDIN */
+.atajos-el-jardin {
+    margin: 0.2em;
+}
+.atajos-el-jardin div {
+    width: 0.2em;
+
+}
+
+.atajos-el-jardin div img {
+    margin: 1em 0.6em;
+    width: 1em;
+    height: 1em;
+
+}
     .productos h2 {
         font-size: nth($list: $font-size, $n: 1);
     }

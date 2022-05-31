@@ -16,7 +16,9 @@ main {
     background-attachment: fixed;
 
 
-    @extend %flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
 
     div {
