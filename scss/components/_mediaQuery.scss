@@ -61,7 +61,7 @@
     }
 
     .talleres-presenciales table {
-        width: 50%;
+        width: 90%;
     }
 
     /* ----FOOTER---- */
@@ -80,7 +80,7 @@
 
     }
 
-    img :hover {
+    img:hover {
         transform: scale(1);
     }
 
@@ -110,10 +110,6 @@
         font-size: 1.7em;
     }
 
-    .footer .logo img {
-        margin: 1, 5em 6em;
-        width: 15em;
-    }
 
     /* ---TITULO SECCION--- */
     .titulo-seccion h2 {
@@ -200,10 +196,13 @@
 
     .atajos-el-jardin div a p {
         font-size: nth($list: $font-size, $n: 1);
+        flex-wrap: wrap;
     }
 
     .atajos-el-jardin div a img {
         width: 2em;
+        height: auto;
+        
     }
 
 
@@ -216,16 +215,29 @@
     }
 
     /* ---TALLERES--- */
-
-    .talleres div {
-        
-    }
+.talleres div{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
 
     .talleres div a h2 {
 
         font-size: nth($list: $font-size, $n: 2);
     }
-
+    /*--FOOTER--*/
+    .footer .logo img {
+        width: 160px;
+    }
+    .redes-sociales a img{
+        width: 20px;  
+    }
+    .contacto img{
+        width: 30px;
+    }
+    .contacto h4, h5{
+        font-size: nth($list: $font-size, $n: 1);
+    }
 }
 
 /* Media queryes intermedio-(tablets) 768px */
@@ -281,6 +293,12 @@
         text-align: center;
         font-size: 1.3em;
     }
+    .video-responsive iframe {
+        height: 100%;
+        width: 100%;
+        min-width: 400px;
+    }
+
    
     /* EL JARDIN */
     .atajos-el-jardin div a p {
@@ -388,12 +406,14 @@
     /*talleres*/
     
     .videos-talleres div div{
-        margin: 0;
-        flex-direction: row;
+        align-items: center;
     }
-    .videos-talleres iframe{
+    .video-responsive iframe {
+        height: 100%;
         width: 100%;
-        
-     }
+        min-width: 300px;
+    }
+    
+
 
 }

@@ -82,7 +82,7 @@
   }
 
   .talleres-presenciales table {
-    width: 50%;
+    width: 90%;
   }
 
   /* ----FOOTER---- */
@@ -99,7 +99,7 @@
     width: 12em;
   }
 
-  img :hover {
+  img:hover {
     transform: scale(1);
   }
 
@@ -122,11 +122,6 @@
   .main-form h2,
 p {
     font-size: 1.7em;
-  }
-
-  .footer .logo img {
-    margin: 1, 5em 6em;
-    width: 15em;
   }
 
   /* ---TITULO SECCION--- */
@@ -205,10 +200,12 @@ p {
 
   .atajos-el-jardin div a p {
     font-size: 1.4em;
+    flex-wrap: wrap;
   }
 
   .atajos-el-jardin div a img {
     width: 2em;
+    height: auto;
   }
 
   .productos h2 {
@@ -220,8 +217,31 @@ p {
   }
 
   /* ---TALLERES--- */
+  .talleres div {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+
   .talleres div a h2 {
     font-size: 1.6em;
+  }
+
+  /*--FOOTER--*/
+  .footer .logo img {
+    width: 160px;
+  }
+
+  .redes-sociales a img {
+    width: 20px;
+  }
+
+  .contacto img {
+    width: 30px;
+  }
+
+  .contacto h4, h5 {
+    font-size: 1.4em;
   }
 }
 /* Media queryes intermedio-(tablets) 768px */
@@ -270,6 +290,12 @@ p {
   .talleres div a h2 {
     text-align: center;
     font-size: 1.3em;
+  }
+
+  .video-responsive iframe {
+    height: 100%;
+    width: 100%;
+    min-width: 400px;
   }
 
   /* EL JARDIN */
@@ -366,12 +392,13 @@ p {
 
   /*talleres*/
   .videos-talleres div div {
-    margin: 0;
-    flex-direction: row;
+    align-items: center;
   }
 
-  .videos-talleres iframe {
+  .video-responsive iframe {
+    height: 100%;
     width: 100%;
+    min-width: 300px;
   }
 }
 /**--COMIENZA CLASS PRODUCTOS (el-jardin)--**/
@@ -427,7 +454,7 @@ p {
   margin-left: 27%;
 }
 .footer div .redes-sociales a img {
-  width: 3.5em;
+  width: 1.8em;
   margin: 1em;
   transition: 1s;
 }
@@ -442,12 +469,12 @@ p {
 }
 .footer div .contacto div img {
   float: left;
-  width: 2.5em;
+  width: 1.8em;
   margin-right: 5%;
 }
 .footer div .contacto div img h4,
 .footer div .contacto div img h5 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-family: sans-serif;
   text-align: center;
 }
@@ -636,7 +663,7 @@ main {
 }
 .main-el-jardin .atajos-el-jardin div a img {
   margin: 1em;
-  width: 9em;
+  width: 8em;
   align-items: center;
 }
 .main-el-jardin .atajos-el-jardin div a img:hover {
@@ -688,6 +715,7 @@ main {
 .main-talleres .talleres div a {
   margin: 2em 0.5em;
   padding: 1em;
+  text-decoration: none;
 }
 .main-talleres .talleres div a h2 {
   text-align: center;
@@ -695,7 +723,7 @@ main {
   text-transform: uppercase;
   font-weight: bold;
   color: #FEF5ED;
-  text-decoration: none;
+  text-shadow: -2px 2px 1px rgba(67, 91, 185, 0.667);
 }
 .main-talleres .talleres div a h2:hover {
   transform: scale(1.1);
