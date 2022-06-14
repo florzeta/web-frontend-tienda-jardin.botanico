@@ -74,7 +74,7 @@ main {
     h2,
     p {
         color: black;
-        font-size: nth($list: $font-size, $n: 2);
+        font-size: nth($list: $font-size, $n: 1);
         font-weight: map-get($map: $titulo-principal, $key: font-weight);
         font-family: nth($list: $font-family, $n: 1);
         text-align: map-get($map: $titulo-principal, $key: text-align);
@@ -115,7 +115,7 @@ main {
         @extend %flex;
 
         div {
-            margin: 1.9em 0 1.9em 0;
+            margin: 1.9em 1em 1.9em 1em;
             background-color: #a6a6a664;
             padding: 1em;
             border-radius: 1.5em;
@@ -198,7 +198,7 @@ main {
 
                 h2 {
                     text-align: center;
-                    font-size: nth($list: $font-size, $n: 4);
+                    font-size: nth($list: $font-size, $n: 3);
                     text-transform: uppercase;
                     font-weight: bold;
                     color: $color-claro;
@@ -236,7 +236,7 @@ main {
 
     /* COMIENZA SECCION VIDEOS-TALLERES */
     .videos-talleres div div {
-        margin: 0.5em;
+        margin: 0.5em 0;
 
         p {
 
@@ -244,7 +244,7 @@ main {
             padding: 0.5em;
 
             background-color: $color-cuatro;
-            font-size: nth($list: $font-size, $n: 5);
+            font-size: nth($list: $font-size, $n: 4);
             color: $color-muy-claro;
             font-weight: bolt;
             font-family: nth($list: $font-family, $n: 3);
@@ -277,13 +277,13 @@ main {
         }
 
         table {
-            margin: 2em 0 2em 0;
+            margin: 2.1em 0 2.1em 0;
             border-color: $color-oscuro;
             border-style: solid;
             border-collapse: collapse;
             empty-cells: show;
             table-layout: fixed;
-            width: 90%;
+            width: 97%;
             background: $color-muy-claro;
         }
 
@@ -325,9 +325,9 @@ main {
 
         h2 {
             color: $color-uno;
-            font-size: nth($list: $font-size, $n: 6);
+            font-size: nth($list: $font-size, $n: 4);
             font-weight: bolt;
-            font-family: nth($list: $font-size, $n: 2);
+            font-family: nth($list: $font-family, $n: 2);
             text-shadow: -2px 2px 2px $color-muy-oscuro;
             text-align: center;
             background-repeat: no-repeat;
@@ -337,26 +337,28 @@ main {
             display: flex;
             justify-content: space-around;
             align-items: center;
-
-
+            .card {
+                width: 70%;
+            }
+            
             .card img {
                 width: 70%;
-
-
-
+                max-width: 250px;
             }
 
             .card-title h2 {
                 color: $color-oscuro;
-                font-size: nth($list: $font-size, $n: 2);
-                font-family: nth($list: $font-family, $n: 4);
+                font-size: 16px;
+                font-family: nth($list: $font-family, $n: 3);
                 text-shadow: -2px 2px 2px $color-tres;
                 border-radius: 1, 5em;
                 box-shadow: 0 0 0.5em -0.2em black;
                 margin: 2em;
+                flex-wrap: nowrap;
+                text-align: center;
             }
-
-
+            
+            
 
         }
 
@@ -368,7 +370,6 @@ main {
     /* COMIENZA SECCION NOVEDADES (tienda.html) */
     .novedades {
         margin: 2em;
-        padding: 1em;
         flex-direction: column;
         @extend %flex;
 
@@ -387,7 +388,7 @@ main {
 
             img {
                 margin: 1em;
-                width: 18em;
+                width: 19em;
                 height: 20em;
                 border-radius: 1.5em;
                 transition: 1s;
@@ -414,7 +415,7 @@ main {
     grid-area: main;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
+    
 
     /**----TITULO DE SECCION PRINCIPAL EN MAIN NO INDEX----**/
     .titulo-seccion {
@@ -434,7 +435,6 @@ main {
     }
 
     div {
-        flex-direction: column;
         @extend %flex;
     }
 
@@ -447,7 +447,7 @@ main {
         flex-wrap: wrap;
 
         div {
-            width: 72%;
+            width: 84%;
             display: flex;
             flex-direction: row;
             text-align: center;

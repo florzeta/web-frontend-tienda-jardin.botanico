@@ -34,18 +34,18 @@
     /* ----TIENDA----- */
     .nuestros-destacados {
         padding: 0;
-        
+        margin: 0;
     }
 
     .nuestros-destacados h2 {
 
-        font-size: nth($list: $font-size, $n: 2);
+        font-size: 14px;
     }
 
 
     .novedades div img {
         width: 15em;
-        height: 18em;
+        height: auto;
     }
 
     .novedades h3 {
@@ -55,22 +55,29 @@
     /*---- TALLERES--- */
 
 
-    .main-talleres .videos-talleres p {
+    .videos-talleres p {
 
         font-size: nth($list: $font-size, $n: 2);
     }
 
     .talleres-presenciales table {
-        width: 90%;
+        width: 100%;
+        margin: 0;
     }
 
     /* ----FOOTER---- */
+    /*--FOOTER--*/
     .footer .logo img {
-        width: 13em;
+        width: 120px;
     }
 
-    .footer .logo h3 {
-        font-size: 1.8em;
+
+    .redes-sociales a img {
+        width: 160px;
+    }
+
+    .contacto div img {
+        width: 15px;
     }
 
     /* EL JARDIN */
@@ -92,11 +99,13 @@
     /* ---TALLERES--- */
 
     .talleres div {
-        width: 15em;
+        width: 100%;
+        height: auto;
+        max-width: 220px;
     }
 
     .talleres div a h2 {
-        font-size: 2em;
+        font-size: 20px;
     }
 }
 
@@ -131,8 +140,7 @@
 
     .header .logo a img {
         margin: 2em 0.5em;
-        width: 12em;
-        height: 12em;
+
     }
 
     /* ---INDEX ----*/
@@ -177,12 +185,22 @@
     }
 
 
-    .novedades h3 {
-        font-size: nth($list: $font-size, $n: 2);
-    }
+
 
     /* ---CONTACTO---- */
+    .form-contacto #form {
+        width: 90%;
+    }
 
+    .form-contacto div {
+        width: 90%;
+    }
+
+    .main-contacto div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
     .main-contacto section .datos-contacto a {
         text-decoration: none;
@@ -197,12 +215,13 @@
     .atajos-el-jardin div a p {
         font-size: nth($list: $font-size, $n: 1);
         flex-wrap: wrap;
+
     }
 
     .atajos-el-jardin div a img {
-        width: 2em;
+        max-width: 90px;
         height: auto;
-        
+
     }
 
 
@@ -215,29 +234,41 @@
     }
 
     /* ---TALLERES--- */
-.talleres div{
-    width: 100%;
-    height: auto;
-    max-width: 250px;
-}
+
 
     .talleres div a h2 {
 
-        font-size: nth($list: $font-size, $n: 2);
-    }
-    /*--FOOTER--*/
-    .footer .logo img {
-        width: 160px;
-    }
-    .redes-sociales a img{
-        width: 20px;  
-    }
-    .contacto img{
-        width: 30px;
-    }
-    .contacto h4, h5{
         font-size: nth($list: $font-size, $n: 1);
     }
+
+    /*----FOOTER---*/
+    .logo img {
+        width: 100%;
+        max-width: 60px;
+    }
+
+    /*----TIENDA---*/
+    .card div {
+        width: 100%;
+
+    }
+
+    .nuestros-destacados card-title {
+        font-size: 14px,  !important
+    }
+
+    .nuestros-destacados card-text {
+        font-size: 13px;
+    }
+
+    .novedades h3 {
+        font-size: nth($list: $font-size, $n: 2);
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .nuestros-destacados div {}
 }
 
 /* Media queryes intermedio-(tablets) 768px */
@@ -263,11 +294,14 @@
 
     .header .logo a img {
         margin: 2em 0.5em;
-        width: 10em;
-        height: 10em;
+        width: 100px;
+        height: auto;
     }
 
     /* main-contacto */
+    .form-contacto div {
+        width: 95%;
+    }
 
     .form-contacto input:focus {
         font-size: nth($list: $font-size, $n: 2);
@@ -285,28 +319,39 @@
     /* ---TALLERES--- */
 
     .talleres div {
-        width: 7em;
-        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 200px;
     }
 
     .talleres div a h2 {
         text-align: center;
-        font-size: 1.3em;
+        font-size: 12px;
     }
+
     .video-responsive iframe {
         height: 100%;
         width: 100%;
         min-width: 400px;
     }
 
-   
+    .talleres-presenciales table {
+        width: 100%;
+    }
+
+    .talleres-presenciales th,
+    td {
+        font-size: 8px;
+    }
+
     /* EL JARDIN */
     .atajos-el-jardin div a p {
         font-size: nth($list: $font-size, $n: 1);
     }
 
     .productos div img {
-        width: 1em;
+        max-width: 180px;
+        height: auto;
         margin: 1em;
     }
 
@@ -376,9 +421,20 @@
     /* ---CONTACTO---- */
 
     .form-contacto #form {
-        width: 90%;
+        width: 95%;
     }
 
+    .form-contacto div {
+        width: 100%;
+        margin: 0;
+        ;
+    }
+
+    .productos div img {
+        max-width: 160px;
+        height: auto;
+        margin: 1em;
+    }
 
     .productos h2 {
         font-size: nth($list: $font-size, $n: 1);
@@ -403,17 +459,58 @@
     .header .logo a img {
         width: 9em;
     }
-    /*talleres*/
-    
-    .videos-talleres div div{
-        align-items: center;
+
+    /* ---TALLERES--- */
+    .videos-talleres div p {
+        font-size: 16px;
     }
+
+    .talleres div {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+    }
+
+    .videos-talleres div div {
+        align-items: center;
+        margin: 1px;
+        min-width: 300px;
+    }
+
+    .videos-talleres p {
+        font-size: 10px;
+
+    }
+
     .video-responsive iframe {
         height: 100%;
         width: 100%;
         min-width: 300px;
     }
-    
 
+    .talleres-presenciales th,
+    td {
+        font-size: 6px;
+    }
+
+    /*--EL JARDIN--*/
+    .atajos-el-jardin div {
+        max-width: 170px;
+        height: auto;
+
+    }
+ /*---tienda----*/
+ .main-tienda .novedades {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+ }
+ .main-tienda .novedades div img{
+    width: 100%;
+    min-width: 180px;
+    height: auto;
+    margin: 0;
+    
+ }
 
 }

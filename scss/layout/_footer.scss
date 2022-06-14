@@ -12,21 +12,25 @@
 
         .logo img {
             margin: 1, 5em 6em;
+        } 
 
             h3 {
-                text-decoration: none;
-                font-size: nth($list: $font-size, $n: 2);
+                
+                font-size: 0.6em;
                 font-weight: bold;
                 font-family: nth($list: $font-family, $n: 4);
-                color: $color-claro;
                 margin-left: 27%;
+                color: $color-oscuro;
+                text-decoration: none;
             }
-        }
+        
 
         .redes-sociales a img {
             width: 1.8em;
-            margin: 1em;
+            margin: 0.8em;
             transition: 1s;
+            display: block;
+            
 
             &:hover {
                 transform: scale(1.1);
@@ -35,18 +39,17 @@
 
         .contacto div {
             flex-direction: column;
-            justify-content: space-around;
             align-items: center;
-            margin: 0.5em;
+            margin: 0.2em;
+            justify-content: space-around;
 
             img {
                 float: left;
-                width: 1.8em;
-                margin-right: 5%;
+                width: 1.6em;
 
                 h4,
                 h5 {
-                    font-size: nth($list: $font-size, $n: 1);
+                    font-size: 1em;
                     font-family: nth($list: $font-family, $n: 4);
                     text-align: center;
                 }
