@@ -1,8 +1,7 @@
 <h1 align="center">Hi 👋, I'm Florencia Ayelen Zayas Furnari</h1>
 <h3 align="center">Entregas Desarrollo Web</h3>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+<p>Proyecto final cargado a servidor con acceso desde la web, aplicando las caracteristicas aprendidas durante mi curso de desarrollo web: HTML, CSS, aplicacion de framework y SEO
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
